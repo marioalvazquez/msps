@@ -1,0 +1,38 @@
+{
+  "name": "msps",
+  "version": "1.0.0",
+  "description": "Website for \"Misioneros del Espíritu Santo\" community in Aguascalientes",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marioalvazquez/msps.git"
+  },
+  "author": "Mario Vázquez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marioalvazquez/msps/issues"
+  },
+  "homepage": "https://github.com/marioalvazquez/msps#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "gulp": "^3.9.1",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-webserver": "^0.9.1"
+  },
+  "dependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "bootstrap": "^4.0.0-beta",
+    "gulp-babel": "^7.0.0",
+    "gulp-clean-css": "^3.7.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.11.0"
+  }
+}
