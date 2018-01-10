@@ -1,1 +1,1 @@
-"use strict";$(document).ready(function(){console.log(2),console.log(4)});
+"use strict";$(document).ready(function(){setTimeout(function(){$(".button-collapse").sideNav(),$(".slider").slider()},1500)});

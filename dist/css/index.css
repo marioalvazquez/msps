@@ -1,1 +1,1 @@
-@import url(https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Montserrat:300,400,700);h1,h2,h3,h4{font-family:Montserrat,sans-serif;text-transform:uppercase;letter-spacing:3px;font-weight:700;margin:0}p{font-family:'Crimson Text',serif}a{color:#333}a:hover{text-decoration:none;color:inherit}.header{padding-top:1rem;padding-bottom:1rem}.hero{position:absolute;top:0;right:0;bottom:0;left:0;background:url(../img/happy.jpg);background-size:cover;z-index:-1}
+h1{color:red}
