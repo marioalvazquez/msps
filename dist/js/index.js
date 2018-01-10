@@ -1,1 +1,1 @@
-"use strict";$(document).ready(function(){setTimeout(function(){$(".button-collapse").sideNav(),$(".slider").slider()},1500)});
+"use strict";$(document).ready(function(){setTimeout(function(){$(".button-collapse").sideNav(),$(".slider").slider(),$($(".slider")[0]).find(".indicators").css({bottom:"52px","z-index":1e3}),$(".us").find(".slides").css("background","white")},1500)});

@@ -2,7 +2,7 @@
 //@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,700|Montserrat:300,400,700');
 
 //Colors
-
+$pink-darken-4: #880e4f;
 //Breakpoints
 $bp-s: 320px;
 $bp-s: 480px;
@@ -10,13 +10,29 @@ $bp-m: 768px;
 $bp-l: 1024px;
 $bp-xl: 1280px;
 //General
-h1{
-  color:red;
+.h1{
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+.indicator-item{
+  height: 8px !important;
+  width: 8px !important;
+}
+.indicator-item.active{
+  background-color: $pink-darken-4 !important;
 }
 //Header
 
 //Hero
 
 //Body
+
+//About us
+.us{
+  .slider.slides{
+  background: white !important;
+  color: black !important;
+}
+}
 
 //Footer
