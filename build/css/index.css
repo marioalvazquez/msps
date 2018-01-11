@@ -12,3 +12,14 @@
 .us .slider.slides {
   background: white !important;
   color: black !important; }
+
+#vocations {
+  background: url("/dist/img/vocations.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  min-height: 480px; }
+  #vocations .tabs {
+    background: none;
+    padding-bottom: 10px;
+    margin-bottom: 10px; }

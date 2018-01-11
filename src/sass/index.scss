@@ -35,4 +35,18 @@ $bp-xl: 1280px;
 }
 }
 
+
+//vocations
+#vocations{
+  background: url('/dist/img/vocations.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  min-height: 480px;
+  .tabs{
+    background: none;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+}
 //Footer
