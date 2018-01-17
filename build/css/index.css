@@ -13,6 +13,12 @@ h1, h2, h3 {
 .indicator-item.active {
   background-color: #b71c1c !important; }
 
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 3rem; }
+  h3 {
+    font-size: 2rem; } }
+
 a.waves-effect.waves-light.btn.yellow.darken-1, a.waves-effect.waves-light.btn.red.darken-4 {
   background: rgba(255, 233, 25, 0.66) !important;
   border-radius: 20px; }

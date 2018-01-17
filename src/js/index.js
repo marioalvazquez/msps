@@ -7,7 +7,7 @@ setTimeout(() =>{
     "bottom": "52px",
     "z-index": 1000
   });
-  $('.us').find('.slides').css("background", "#212121");
+  $('.us').find('.slides').css("background", "#000");
 }, 1500);
 $('.programa').find('li').hover(
   function(){
@@ -15,5 +15,5 @@ $('.programa').find('li').hover(
   }, function(){
     $(this).find('span.titulo').fadeOut();
   }
-)
+);
 });

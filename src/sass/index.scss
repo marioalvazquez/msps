@@ -32,7 +32,15 @@ h1,h2,h3{
 .indicator-item.active{
   background-color: $red !important;
 }
-
+//general tweaks
+@media screen and (max-width: $bp-m) {
+  h1{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 2rem;
+  }
+}
 
 //Customs
 //Buttons
