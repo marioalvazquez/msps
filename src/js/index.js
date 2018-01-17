@@ -7,6 +7,13 @@ setTimeout(() =>{
     "bottom": "52px",
     "z-index": 1000
   });
-  $('.us').find('.slides').css("background", "white");
+  $('.us').find('.slides').css("background", "#212121");
 }, 1500);
+$('.programa').find('li').hover(
+  function(){
+    $(this).find('span.titulo').fadeIn();
+  }, function(){
+    $(this).find('span.titulo').fadeOut();
+  }
+)
 });
