@@ -181,4 +181,18 @@ h3.h4{
     margin-bottom: 10px;
   }
 }
+
+//contact
+#contact{
+  i.material-icons.prefix{
+    color: $yellow;
+  }
+  input, textarea{
+    border-bottom-color: $yellow;
+    color: $white;
+  }
+  label.active{
+    color: $yellow;
+  }
+}
 //Footer
