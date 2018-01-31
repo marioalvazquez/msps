@@ -182,6 +182,43 @@ h3.h4{
   }
 }
 
+//Events
+.event-item{
+  .row{
+    border-bottom: 1px solid $yellow;
+  }
+}
+.date-container{
+  padding-right: 0 !important;
+}
+p.day{
+  background: $white;
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 3rem;
+  font-weight: 600;
+}
+p.date{
+  margin: 0;
+  padding: .5rem 0;
+  background: $yellow;
+  color: $white;
+  font-style: italic;
+}
+.img-event{
+  background-size: cover;
+  background-position: 50%;
+  height: 134px;
+}
+.btn-container{
+  height: 200px;
+}
+
+//quote
+.parallax-container{
+  height: 30rem;
+}
+
 //contact
 #contact{
   i.material-icons.prefix{

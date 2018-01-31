@@ -8,6 +8,7 @@ setTimeout(() =>{
     "z-index": 1000
   });
   $('.us').find('.slides').css("background", "#000");
+  $('.parallax').parallax();
 }, 1500);
 $('.programa').find('li').hover(
   function(){
