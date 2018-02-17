@@ -172,6 +172,28 @@ p.date {
 .parallax-container {
   height: 30rem; }
 
+.contemplatives {
+  background: url("/dist/img/contemplatives.jpg");
+  background-size: cover;
+  background-position: 50%;
+  min-height: 500px !important; }
+
+.action-men {
+  background: url("/dist/img/actionmen.jpg");
+  background-size: cover;
+  background-position: 50%;
+  min-height: 500px !important; }
+
+.action-men h3, .contemplatives h3 {
+  padding-top: 5rem;
+  padding-left: 5rem; }
+
+.action-men p, .contemplatives p {
+  font-size: 3rem; }
+
+#findUsMap {
+  height: 500px; }
+
 #contact i.material-icons.prefix {
   color: #fdd835; }
 

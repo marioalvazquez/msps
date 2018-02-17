@@ -1,0 +1,3 @@
+--video en click de slider
+--programación de mapa
+-- corrección de logo paloma

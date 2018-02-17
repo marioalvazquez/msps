@@ -218,7 +218,32 @@ p.date{
 .parallax-container{
   height: 30rem;
 }
-
+//lifeStyle
+.contemplatives{
+  background: url('/dist/img/contemplatives.jpg');
+  background-size: cover;
+  background-position: 50%;
+  min-height: 500px !important;
+}
+.action-men{
+  background: url('/dist/img/actionmen.jpg');
+  background-size: cover;
+  background-position: 50%;
+  min-height: 500px !important;
+}
+.action-men, .contemplatives{
+  h3{
+    padding-top: 5rem;
+  padding-left: 5rem;
+}
+p{
+  font-size: 3rem;
+}
+}
+//Find Us
+#findUsMap{
+  height: 500px;
+}
 //contact
 #contact{
   i.material-icons.prefix{
