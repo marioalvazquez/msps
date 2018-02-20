@@ -17,4 +17,30 @@ $('.programa').find('li').hover(
     $(this).find('span.titulo').fadeOut();
   }
 );
+$('.location-to-country').on('click', (ev, ef) => {
+  ev.preventDefault();
+  var selected = $(ev.currentTarget).attr('data-country');
+  $('#cities').empty();
+  var result = "";
+  switch (selected) {
+    case "MX":
+      result =
+      '<li><a>Baja California</a></li>'+
+      '<li><a>Baja California</a></li>'+
+      '<li><a>Baja California</a></li>'+
+      '<li><a>Baja California</a></li>'+
+      '<li><a>Baja California</a></li>'+
+      '<li><a>Baja California</a></li>'+
+      '<li><a>Baja California</a></li>'+
+        '<li><a>Baja California</a></li>';
+      break;
+    case "IT":
+      break;
+    case "BR":
+      break;
+    default:
+      break;
+  }
+  $('#cities').append(result).addClass('list-inline');
+});
 });

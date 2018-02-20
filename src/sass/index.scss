@@ -43,6 +43,18 @@ h1,h2,h3{
 }
 
 //Customs
+ul.list-inline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a.location-to-country{
+      padding: 0 1rem;
+      margin: 0 1rem;
+      border-bottom: 1px solid $white;
+    }
+}
+
+
 //Buttons
 a.waves-effect.waves-light.btn.yellow.darken-1, a.waves-effect.waves-light.btn.red.darken-4 {
     background: rgba(255, 233, 25, 0.66) !important;
