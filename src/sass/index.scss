@@ -53,7 +53,17 @@ ul.list-inline {
       border-bottom: 1px solid $white;
     }
 }
+li a.city-link{
+  padding: 0 1rem;
+  color: $white;
 
+}
+.modal{
+  width: 70%;
+}
+.modal-content{
+  padding: 0 !important;
+}
 
 //Buttons
 a.waves-effect.waves-light.btn.yellow.darken-1, a.waves-effect.waves-light.btn.red.darken-4 {
@@ -193,7 +203,35 @@ h3.h4{
     margin-bottom: 10px;
   }
 }
-
+.missionary-steps{
+  cursor: pointer;
+  i{
+    transition: .3s all ease-in;
+  }
+  &:hover{
+    i{
+      padding-left: 1rem;
+    }
+  }
+}
+#missonary-steps-modal{
+  padding: 5rem;
+  h4{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $red;
+    letter-spacing: 2px;
+  }
+  span{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 3rem;
+    font-weight: bold;
+    color: $yellow;
+  }
+}
 //Events
 .event-item{
   .row{
@@ -231,25 +269,35 @@ p.date{
   height: 30rem;
 }
 //lifeStyle
+.hidden-text{
+  padding-top: 5rem !important;
+  opacity: 0;
+}
+.low-title{
+  padding-top: 10rem !important;
+}
 .contemplatives{
   background: url('/dist/img/contemplatives.jpg');
   background-size: cover;
   background-position: 50%;
-  min-height: 500px !important;
 }
 .action-men{
   background: url('/dist/img/actionmen.jpg');
   background-size: cover;
   background-position: 50%;
-  min-height: 500px !important;
 }
 .action-men, .contemplatives{
+  height: 500px !important;
+  overflow: hidden;
+  cursor: pointer;
   h3{
     padding-top: 5rem;
-  padding-left: 5rem;
+    transition: .5s all ease-in;
 }
 p{
-  font-size: 3rem;
+  font-size: 1.5rem;
+  padding: 0 3rem;
+  transition: .5s all ease-in;
 }
 }
 //Find Us

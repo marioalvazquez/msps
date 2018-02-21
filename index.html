@@ -5,6 +5,12 @@
     <title>Misioneros del Espíritu Santo</title>
   </head>
   <body class="black">
+    <!-- Video Modal -->
+  <div id="videoModal" class="modal">
+    <div class="modal-content" id="videoContainer">
+
+    </div>
+  </div>
     <div class="slider">
     <ul class="slides">
       <li>
@@ -12,7 +18,7 @@
         <div class="caption left-align">
           <h3>MISIONEROS<br/> DEL ESPÍRITU SANTO</h3>
           <h5 class="light grey-text text-lighten-3">Provincia Félix de Jesús</h5>
-          <a class="waves-effect waves-light btn yellow darken-1"><i class="material-icons left">play_arrow</i>ver más</a>
+          <a class="waves-effect waves-light btn yellow darken-1 modal-trigger" href="#videoModal"><i class="material-icons left">play_arrow</i>ver más</a>
         </div>
       </li>
       <li>
@@ -20,7 +26,7 @@
         <div class="caption right-align">
           <h3 class="red-text text-darken-4">MISIONEROS<br/> DEL ESPÍRITU SANTO</h3>
           <h5 class="light red-text text-darken-4">Provincia Félix de Jesús</h5>
-          <a class="waves-effect waves-light btn red darken-4"><i class="material-icons left">near_me</i>ver más</a>
+          <a class="waves-effect waves-light btn red darken-4 modal-trigger" href="#videoModal"><i class="material-icons left">near_me</i>ver más</a>
         </div>
       </li>
       <li>
@@ -28,7 +34,7 @@
         <div class="caption left-align">
           <h3>MISIONEROS<br/> DEL ESPÍRITU SANTO</h3>
           <h5 class="light grey-text text-lighten-3">Provincia Félix de Jesús</h5>
-          <a class="waves-effect waves-light btn yellow darken-1"><i class="material-icons left">near_me</i>ver más</a>
+          <a class="waves-effect waves-light btn yellow darken-1 modal-trigger" href="#videoModal"><i class="material-icons left">near_me</i>ver más</a>
         </div>
       </li>
     </ul>
@@ -114,20 +120,38 @@
       <div class="collapsible-header black-text"><i class="material-icons">directions_run</i>Conviértete en Misionero</div>
       <div class="collapsible-body">
         <ul>
-          <li><span style="font-size:3rem; font-weight:bold;">1</span> Ámate y Conócete <i class="material-icons">arrow_forward</i></li>
-          <li><span style="font-size:3rem; font-weight:bold;">2</span> Ama a Dios <i class="material-icons">arrow_forward</i></li>
+          <li class="missionary-steps" data-idStep="1"><span style="font-size:3rem; font-weight:bold;">1</span> Ámate y Conócete <i class="material-icons">arrow_forward</i></li>
+          <li class="missionary-steps" data-idStep="2"><span style="font-size:3rem; font-weight:bold;">2</span> Ama a Dios <i class="material-icons">arrow_forward</i></li>
         </ul>
       </div>
     </li>
     <li>
       <div class="collapsible-header black-text"><i class="material-icons">book</i>Formación Básica</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div class="collapsible-body">
+        <ul>
+          <li class="missionary-steps" data-idStep="3"><span style="font-size:3rem; font-weight:bold;">1</span> Filosofado <i class="material-icons">arrow_forward</i></li>
+          <li class="missionary-steps" data-idStep="4"><span style="font-size:3rem; font-weight:bold;">2</span> Vive la Experiencia de Entregarte <i class="material-icons">arrow_forward</i></li>
+          <li class="missionary-steps" data-idStep="5"><span style="font-size:3rem; font-weight:bold;">3</span> Transformemos el Mundo <i class="material-icons">arrow_forward</i></li>
+        </ul>
+      </div>
     </li>
     <li>
       <div class="collapsible-header black-text"><i class="material-icons">school</i>Formación Permanente</div>
-      <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      <div class="collapsible-body">
+        <ul>
+          <li class="missionary-steps" data-idStep="6"><span style="font-size:3rem; font-weight:bold;">1</span> Misionero para Siempre <i class="material-icons">arrow_forward</i></li>
+        </ul>
+      </div>
     </li>
   </ul>
+  </div>
+  <!-- Modal steps to become missonary -->
+  <div id="missonary-steps-modal" class="modal">
+    <div class="modal-content">
+      <h4></h4>
+      <p></p>
+      <span></span>
+    </div>
   </div>
   <div id="test-swipe-2" class="col s12 white-text text-accent-2">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -141,18 +165,17 @@
   </div>
   <div class="had-container" id="lifeStyle">
     <div class="row">
-      <div class="col s6 contemplatives">
-        <h3 class="left-align white-text">
+      <div class="col s12 m6 contemplatives">
+        <h3 class="center-align white-text low-title">
           CONTEMPLATIVOS
         </h3>
-        <p class="center-align white-text">+</p>
+        <p class="white-text center-align hidden-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       </div>
-      <div class="col s6 action-men">
-        <h3 class="left-align white-text">
-          HOMBRES
-          <br>DE ACCIÓN
+      <div class="col s12 m6 action-men">
+        <h3 class="center-align white-text low-title">
+          HOMBRES DE ACCIÓN
         </h3>
-        <p class="center-align white-text">+</p>
+        <p class="white-text center-align hidden-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
       </div>
     </div>
   </div>
@@ -508,7 +531,7 @@ var map;
     }
 ]
         });
-        let icon = '/dist/img/icored.png';
+        let icon = '/dist/img/icowine.png';
         //var marker = new google.maps.Marker({
         //  position: {
         //    lat: 28.1854152,
@@ -543,13 +566,13 @@ var map;
                   `<div class="col s8 white-text">`+
                   `<h5>${item.name}</h5>`+
                   `<p>${item.location.city}, ${item.location.state}</p>`+
-                  `<p><a href="" class="location-link">${item.location.address}, ${item.location.neighborhood} ${item.location.zipCode}</a></p>`+
+                  `<p><a href="https://www.google.com/maps/?q=${item.location.lat},${item.location.lon}" target="_blank" class="location-link white-text"> <i class="material-icons yellow-text text-darken-1">place</i>${item.location.address}, ${item.location.neighborhood} ${item.location.zipCode}</a></p>`+
                   `<ul class="location-phones"></ul>` +
                   `</div>`
                 );
                 item.location.tel.forEach((item, index) => {
                   $('.location-phones').append(
-                    `<p><a href="tel:${item}" class="location-phones-link">${item} <i class="material-icons yellow-text text-darken-1">phone</i></a></p>`
+                    `<p><a href="tel:${item}" class="location-phones-link white-text"> <i class="material-icons yellow-text text-darken-1">phone</i> ${item}</a></p>`
                   )
                 });
               });
@@ -560,6 +583,60 @@ var map;
     </script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDF90pa9X-qmf0vdscijsE9tB0u_cCmlYk&callback=initMap">
+    </script>
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('videoContainer', {
+          height: '480',
+          width: '100%',
+          videoId: '3UI2uEtgYUo',
+          events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+          }
+        });
+      }
+
+      // 4. The API will call this function when the video player is ready.
+    function onPlayerReady(event) {
+      if($('#videoModal').hasClass('open')){
+        event.target.playVideo();
+      }
+      else{
+        event.target.stopVideo();
+      }
+    }
+
+      // 5. The API calls this function when the player's state changes.
+      //    The function indicates that when playing a video (state=1),
+      //    the player should play for six seconds and then stop.
+      var done = false;
+      function onPlayerStateChange(event) {
+        if (event.data == YT.PlayerState.PLAYING && !done) {
+          setTimeout(stopVideo, 6000);
+          done = true;
+        }
+      }
+      function stopVideo() {
+        player.stopVideo();
+      }
+    </script>
+    <script>
+      $(document).ready(()=>{
+        $('a[href="#videoModal"]').on('click', function(event){
+          player.playVideo();
+        });
+      });
     </script>
   </body>
 </html>
