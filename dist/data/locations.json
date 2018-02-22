@@ -298,5 +298,20 @@
       "tel": ["(39) 0289 462092"],
       "gallery": []
     }
+  },
+  {
+    "id": 21,
+    "name": "Parroquia del Espíritu Santo",
+    "location":{
+      "lat": 32.506983,
+      "lon": -117.0087972,
+      "state": "Baja California",
+      "city": "Tijuana",
+      "address": "Rosales 10611 y Cumpas",
+      "neighborhood": "Fracc. Chapultepec",
+      "zipCode": 22420,
+      "tel": ["(664) 621 8507", "(664) 621 8355"],
+      "gallery": []
+    }
   }
 ]
