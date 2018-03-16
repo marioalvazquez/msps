@@ -99,6 +99,7 @@
         </div>
       </div>
     </div>
+    <img src="dist/img/mano.png" alt="Mano Felix" class="mano-felix">
   </div>
   <div class="had-container pink darken-4" id="vocations">
     <div class="container">
@@ -362,7 +363,8 @@ var map;
         var uluru = {lat: 41.9033189, lng: -12.4122659};
         map = new google.maps.Map(document.getElementById('findUsMap'), {
           zoom: 3,
-          center: uluru,
+          center: uluru
+          /*,
           styles: [
     {
         "featureType": "all",
@@ -530,6 +532,7 @@ var map;
         ]
     }
 ]
+*/
         });
         let icon = '/dist/img/icowine.png';
         //var marker = new google.maps.Marker({
@@ -599,7 +602,7 @@ var map;
         player = new YT.Player('videoContainer', {
           height: '480',
           width: '100%',
-          videoId: '3UI2uEtgYUo',
+          videoId: 'fRPx78L1vkM',
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange
