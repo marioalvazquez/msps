@@ -14,7 +14,7 @@
     <div class="slider">
     <ul class="slides">
       <li>
-        <img src="/dist/img/one4.jpg"> <!-- image -->
+        <img src="dist/img/one4.jpg"> <!-- image -->
         <div class="caption left-align">
           <h3>MISIONEROS<br/> DEL ESPÍRITU SANTO</h3>
           <h5 class="light grey-text text-lighten-3">Provincia Félix de Jesús</h5>
@@ -22,7 +22,7 @@
         </div>
       </li>
       <li>
-        <img src="/dist/img/two.jpg"> <!-- image -->
+        <img src="dist/img/two.jpg"> <!-- image -->
         <div class="caption right-align">
           <h3 class="red-text text-darken-4">MISIONEROS<br/> DEL ESPÍRITU SANTO</h3>
           <h5 class="light red-text text-darken-4">Provincia Félix de Jesús</h5>
@@ -30,7 +30,7 @@
         </div>
       </li>
       <li>
-        <img src="/dist/img/three.jpg"> <!-- image -->
+        <img src="dist/img/three.jpg"> <!-- image -->
         <div class="caption left-align">
           <h3>MISIONEROS<br/> DEL ESPÍRITU SANTO</h3>
           <h5 class="light grey-text text-lighten-3">Provincia Félix de Jesús</h5>
@@ -95,10 +95,11 @@
         </div>
         </div>
         <div class="col s12 m6 center align">
-          <img src="/dist/img/us.jpg" alt="Happiness" class="circle responsive-img z-depth-3">
+          <img src="dist/img/us.jpg" alt="Happiness" class="circle responsive-img z-depth-3">
         </div>
       </div>
     </div>
+    <img src="dist/img/mano.png" alt="Mano Felix" class="mano-felix">
   </div>
   <div class="had-container pink darken-4" id="vocations">
     <div class="container">
@@ -195,7 +196,7 @@
               <p class="day">25</p>
               <p class="date">Feb, 2018</p>
             </div>
-            <div class="col s6 img-event" style="background-image:url('/dist/img/happy.jpg')">
+            <div class="col s6 img-event" style="background-image:url('dist/img/happy.jpg')">
 
             </div>
           </div>
@@ -217,7 +218,7 @@
               <p class="day">25</p>
               <p class="date">Feb, 2018</p>
             </div>
-            <div class="col s6 img-event" style="background-image:url('/dist/img/happy.jpg')">
+            <div class="col s6 img-event" style="background-image:url('dist/img/happy.jpg')">
 
             </div>
           </div>
@@ -239,7 +240,7 @@
               <p class="day">25</p>
               <p class="date">Feb, 2018</p>
             </div>
-            <div class="col s6 img-event" style="background-image:url('/dist/img/happy.jpg')">
+            <div class="col s6 img-event" style="background-image:url('dist/img/happy.jpg')">
 
             </div>
           </div>
@@ -349,20 +350,21 @@
         <p>Hecho con <i class="material-icons">favorite</i>, por <i class="material-icons">face.</i></p>
         <p>- Misioneros del Espíritu Santo</p>
         <p>
-          <img src="/dist/img/mspswhite.png" alt="Misioneros del Espíritu Santo" style="max-width:280px;">
+          <img src="dist/img/mspswhite.png" alt="Misioneros del Espíritu Santo" style="max-width:280px;">
         </p>
       </div>
     </div>
   </div>
-<script src="/dist/js/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="/dist/js/initializer.js" charset="utf-8"></script>
+<script src="dist/js/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="dist/js/initializer.js" charset="utf-8"></script>
 <script>
 var map;
       function initMap() {
         var uluru = {lat: 41.9033189, lng: -12.4122659};
         map = new google.maps.Map(document.getElementById('findUsMap'), {
           zoom: 3,
-          center: uluru,
+          center: uluru
+          /*,
           styles: [
     {
         "featureType": "all",
@@ -530,8 +532,9 @@ var map;
         ]
     }
 ]
+*/
         });
-        let icon = '/dist/img/icowine.png';
+        let icon = 'dist/img/icowine.png';
         //var marker = new google.maps.Marker({
         //  position: {
         //    lat: 28.1854152,
@@ -546,7 +549,7 @@ var map;
         //});
         $.ajax({
           dataType: "json",
-          url: "/dist/data/locations.json",
+          url: "dist/data/locations.json",
           success: data =>{
             data.forEach((item, index) =>{
                new google.maps.Marker({
@@ -561,7 +564,7 @@ var map;
                 map.setZoom(20);
                 $('#location-selected').empty();
                 $('#location-selected').append(
-                  `<div class="col s4" style="background:url('/dist/img/happy.jpg'); background-size:cover; background-position:50%; min-height:250px;">`+
+                  `<div class="col s4" style="background:url('dist/img/happy.jpg'); background-size:cover; background-position:50%; min-height:250px;">`+
                   `</div>`+
                   `<div class="col s8 white-text">`+
                   `<h5>${item.name}</h5>`+
@@ -599,7 +602,7 @@ var map;
         player = new YT.Player('videoContainer', {
           height: '480',
           width: '100%',
-          videoId: '3UI2uEtgYUo',
+          videoId: 'fRPx78L1vkM',
           events: {
             'onReady': onPlayerReady,
             'onStateChange': onPlayerStateChange

@@ -51,9 +51,16 @@ a.waves-effect.waves-light.btn.yellow.darken-1, a.waves-effect.waves-light.btn.r
   #logo2 {
     display: none; } }
 
-.us .slider.slides {
-  background: #212121 !important;
-  color: #fff !important; }
+.us {
+  position: relative; }
+  .us .slider.slides {
+    background: #212121 !important;
+    color: #fff !important; }
+  .us .mano-felix {
+    position: absolute;
+    bottom: 0;
+    width: 250px;
+    z-index: -1000; }
 
 h3.h4 {
   color: red; }
@@ -107,18 +114,18 @@ h3.h4 {
   margin-bottom: 0.5rem; }
 
 .programa li.cafe::before {
-  background-image: url("/dist/img/circle.svg");
+  background-image: url("../img/circle.svg");
   background-repeat: no-repeat;
   width: 2.3rem; }
 
 .programa li.comida::before {
-  background-image: url("/dist/img/circle.svg");
+  background-image: url("../img/circle.svg");
   background-repeat: no-repeat;
   background-position: 0 4px;
   width: 2.3rem; }
 
 .programa li.descanso::before {
-  background-image: url("/dist/img/circle.svg");
+  background-image: url("../img/circle.svg");
   background-repeat: no-repeat;
   width: 2.3rem; }
 
@@ -127,7 +134,7 @@ h3.h4 {
   content: " ";
   width: 2rem;
   height: 2rem;
-  background: url("/dist/img/circle.svg");
+  background: url("../img/circle.svg");
   background-repeat: no-repeat;
   left: 0;
   top: 0; }
@@ -142,7 +149,7 @@ h3.h4 {
 
 .programa li:first-child::before,
 .programa li:last-child::before {
-  background-image: url("/dist/img/circle.svg");
+  background-image: url("../img/circle.svg");
   background-repeat: no-repeat; }
 
 @media screen and (max-width: 767px) {
@@ -150,7 +157,7 @@ h3.h4 {
     display: none; } }
 
 #vocations {
-  background: url("/dist/img/vocations2.jpg");
+  background: url("../img/vocations2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50%;
@@ -222,12 +229,12 @@ p.date {
   padding-top: 10rem !important; }
 
 .contemplatives {
-  background: url("/dist/img/contemplatives.jpg");
+  background: url("../img/contemplatives.jpg");
   background-size: cover;
   background-position: 50%; }
 
 .action-men {
-  background: url("/dist/img/actionmen.jpg");
+  background: url("../img/actionmen.jpg");
   background-size: cover;
   background-position: 50%; }
 
