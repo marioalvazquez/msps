@@ -19,7 +19,6 @@ if ( $result->num_rows > 0 ) {
 
     $_SESSION['message'] = 'Ya existe un usuario con esta cuenta de correo electrónico';
     header("location:error.php");
-
 }
 else { // Email doesn't already exist in a database, proceed...
 
@@ -53,12 +52,10 @@ else { // Email doesn't already exist in a database, proceed...
         mail( $to, $subject, $message_body, $headers);
 
         header("location:profile.php");
-
     }
 
     else {
         $_SESSION['message'] = 'Algo salió mal, vuelve a intentar más tarde!';
         header("location:error.php");
     }
-
 }
