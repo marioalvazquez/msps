@@ -5,7 +5,7 @@ session_start();
 // Check if user is logged in using the session variable
 if ( $_SESSION['logged_in'] != 1 ) {
   $_SESSION['message'] = "Inicia sesión antes de ingresar a esta página!";
-  header("location: error.php");
+  header("location:error.php");
 }
 else {
     // Makes it easier to read
