@@ -52,10 +52,12 @@ else { // Email doesn't already exist in a database, proceed...
         mail( $to, $subject, $message_body, $headers);
 
         header("location:profile.php");
+        exit;
     }
 
     else {
         $_SESSION['message'] = 'Algo salió mal, vuelve a intentar más tarde!';
         header("location:error.php");
+        exit;
     }
 }
