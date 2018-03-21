@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
       <div class="row">
         <div class="input-field col s12 m8 offset-m2">
           <i class="material-icons prefix">lock_outline</i>
-          <input id="icon_telephone" type="password" class="validate" required>
+          <input id="icon_telephone" type="password" class="validate" required name="password">
           <label for="icon_telephone">Contraseña</label>
         </div>
       </div>
