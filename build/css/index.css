@@ -262,3 +262,9 @@ p.date {
 
 #contact label.active {
   color: #fdd835; }
+
+#formFileUpload {
+  background: #212121 !important;
+  color: #fff !important; }
+  #formFileUpload h4 {
+    text-transform: capitalize; }

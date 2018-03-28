@@ -3,6 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Misioneros del Espíritu Santo</title>
+    <!--Start of Zendesk Chat Script-->
+<script type="text/javascript">
+window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=
+d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set.
+_.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute("charset","utf-8");
+$.src="https://v2.zopim.com/?5ZtosaZgKixt7HkpDKFuZW5n4duxsxi9";z.t=+new Date;$.
+type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
+</script>
+<!--End of Zendesk Chat Script-->
   </head>
   <body class="black">
     <!-- Video Modal -->
@@ -314,44 +323,33 @@
           </h2>
         </div>
         <div class="col s12">
-          <form action="">
+          <form action="send-mail.php" method="post" id="message-form">
             <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
-          <input id="name" type="text" class="validate">
+          <input id="name" type="text" class="validate" name="name" required>
           <label for="icon_prefix">Nombre</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">mail</i>
-          <input id="mail" type="tel" class="validate">
+          <input id="mail" type="tel" class="validate" name="mail" required>
           <label for="icon_telephone">Correo</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <textarea id="textarea1" class="materialize-textarea" name="message" required></textarea>
           <label for="textarea1">Mensaje</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s12 right-align">
-          <input type="submit" name="Send" value="Send" hidden>
-          <a class="waves-effect waves-light btn yellow darken-1"><i class="material-icons right">send</i>Enviar</a>
+          <input type="submit" name="Send" value="Send" style="display:none" id="send-message-real-btn">
+          <a class="waves-effect waves-light btn yellow darken-1" id="send-message-btn"><i class="material-icons right">send</i>Enviar</a>
         </div>
       </div>
           </form>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="container" id="footer">
-    <div class="row">
-      <div class="col s12 center-align red-text text-darken-4">
-        <p>Hecho con <i class="material-icons">favorite</i>, por <i class="material-icons">face.</i></p>
-        <p>- Misioneros del Espíritu Santo</p>
-        <p>
-          <img src="dist/img/mspswhite.png" alt="Misioneros del Espíritu Santo" style="max-width:280px;">
-        </p>
       </div>
     </div>
   </div>

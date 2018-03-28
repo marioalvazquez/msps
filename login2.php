@@ -16,6 +16,7 @@ else { // User exists
 
         $_SESSION['email'] = $user['email'];
         $_SESSION['active'] = $user['active'];
+        $_SESSION['role'] = $user['idRole'];
 
         // This is how we'll know the user is logged in
         $_SESSION['logged_in'] = true;

@@ -8,17 +8,22 @@ session_destroy();
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Error</title>
+  <title>Misioneros del Espíritu Santo</title>
 </head>
-
 <body>
-    <div class="form">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
           <h1>Gracias por tu visita</h1>
 
           <p><?= 'Haz cerrado sesión exitosamente!'; ?></p>
 
-          <a href="index.php"><button class="button button-block"/>Inicio</button></a>
-
+          <a href="index.php"><button class="waves-effect waves-light btn yellow darken-1"/>Inicio</button></a>
+        </div>
+      </div>
     </div>
+    <script src="dist/js/jquery-2.1.1.min.js" charset="utf-8"></script>
+    <script src="dist/js/initializer.js" charset="utf-8"></script>
+    <script src="dist/js/index.js"></script>
 </body>
 </html>

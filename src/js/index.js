@@ -1,5 +1,10 @@
 $(document).ready(() =>{
   //$(".button-collapse").sideNav();
+
+  $('#send-message-btn').on('click', ev =>{
+    $('#send-message-real-btn').click();
+  });
+
 setTimeout(() =>{
   $(".button-collapse").sideNav();
   $('.slider').slider();
@@ -10,6 +15,9 @@ setTimeout(() =>{
   $('.us').find('.slides').css("background", "#000");
   $('.parallax').parallax();
   $('.modal').modal();
+  $('.datepicker').datepicker();
+  $('.timepicker').timepicker();
+
 }, 1500);
 $('.programa').find('li').hover(
   function(){
