@@ -48,7 +48,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
       </li>
     </ul>
   </div>
-  <div class="had-container us">
+  <div class="had-container us" id="us">
     <div class="row center align">
       <div class="col s12">
         <h1 class="red-text text-darken-4">SOMOS ACOMPAÑANTES</h1>
