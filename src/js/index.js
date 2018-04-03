@@ -15,8 +15,24 @@ setTimeout(() =>{
   $('.us').find('.slides').css("background", "#000");
   $('.parallax').parallax();
   $('.modal').modal();
-  $('.datepicker').datepicker();
-  $('.timepicker').timepicker();
+  $('.timepicker').pickatime({
+    default: 'now', // Set default time
+    fromnow: 0,       // set default time to * milliseconds from now (using with default = 'now')
+    twelvehour: false, // Use AM/PM or 24-hour format
+    donetext: 'OK', // text for done-button
+    cleartext: 'Limpiar', // text for clear-button
+    canceltext: 'Cancelar',
+    format: 'hh:mm:ss', // Text for cancel-button
+    autoclose: false, // automatic close timepicker
+    ampmclickable: true, // make AM PM clickable
+    aftershow: function(){} //Function for after opening timepicker
+  });
+
+  $('.datepicker').pickadate({
+    selectMonths: true, // Creates a dropdown to control month
+    selectYears: 15, // Creates a dropdown of 15 years to control year
+    format: 'yyyy-mm-dd'
+  });
 
 }, 1500);
 $('.programa').find('li').hover(

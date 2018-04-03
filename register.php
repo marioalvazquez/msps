@@ -38,9 +38,9 @@ else { // Email doesn't already exist in a database, proceed...
 
         // Send registration confirmation link (verify.php)
         $to = $email;
-        $subject = 'Verificación de Cuenta';
+        $subject = "Verificación de Cuenta";
         $message_body = "Hola!\r\n¡Gracias por registrarte en nuestro sitio web!\r\nPor favor, accede a este link para activar tu cuenta: http://msps.mariovazquez.com.mx/verify.php?email=".$email."&hash=".$hash;
-        $headers = "From: Misioneros del Espíritu Santo <contacto@misionerosdelespiritusantoprf.com>";
+        $headers = "From: Misioneros del Espíritu Santo<contacto@misionerosdelespiritusantopfj.com>";
         mail($to, $subject, $message_body, $headers);
         header("location:profile.php");
         exit;

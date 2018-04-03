@@ -1,6 +1,7 @@
 <?php
   require 'connect.php';
   if (isset($_POST['submit'])) {
+    //file upload
     $file = $_FILES['file'];
 
     $fileName = $_FILES['file']['name'];
@@ -12,7 +13,20 @@
     $fileExt = explode('.', $fileName);
     $fileActualExt = strtolower(end($fileExt));
 
-    $allowed = array('ppt', 'pptx', 'doc', 'docx', 'pdf', 'xls', 'xlsx');
+    $allowed = array('png', 'jpg', 'jpeg');
+
+    //sql insert
+    $title = $mysqli->escape_string($_POST['title']);
+    $date = $mysqli->escape_string($_POST['date']);
+    $hour = $mysqli->escape_string($_POST['hour']).":00";
+    $place = $mysqli->escape_string($_POST['place']);
+    $location = $mysqli->escape_string($_POST['location']);
+    $description = $mysqli->escape_string($_POST['description']);
+
+    $date_hourStr = $date." ".$hour;
+    $date_hour = date('Y-m-d H:i:s', strtotime($date_hourStr));
+
+
 
     if (in_array($fileActualExt, $allowed)) {
       if ($fileError === 0) {
@@ -20,25 +34,30 @@
           $fileNameNew = uniqid('', true).".".$fileActualExt;
           $fileDestination = 'dist/uploads/'.$fileNameNew;
           move_uploaded_file($fileTmpName, $fileDestination);
-          $sql = "INSERT INTO file (name, unique_name, type) "
-                  . "VALUES ('$fileName','$fileNameNew', '$fileActualExt')";
-          $mysqli->query($sql);
-          header("location:profile.php");
+          $sql = "INSERT INTO event (title, date_hour, place, location, description, active, image) "
+                  . "VALUES ('$title','$date_hour', '$place', '$location', '$description', 1, '$fileNameNew')";
+          if (!$mysqli->query($sql)) {
+            echo "Variables recibidas\r\n"."\r\n".$title.$date.$hour.$place.$location.$description.$fileNameNew;
+            echo $sql;
+          }
+          else{
+            header("location:profile.php");
+          }
         }
         else{
-          $_SESSION['message'] = 'El archivo seleccionado es demasiado grande';
-          header("location:error.php");
+          echo "archivo demasiado grande";
         }
       }
       else{
-        $_SESSION['message'] = 'Ha ocurrido un error, vuelve a intentar más tarde';
-        header("location:error.php");
+        echo "error de archivo";
       }
     }
     else{
-      $_SESSION['message'] = 'No puedes subir arhivos del tipo seleccionado';
-      header("location:error.php");
+      echo "archivo no permitido";
     }
 
+  }
+  else{
+    echo "error de isset submits";
   }
  ?>
