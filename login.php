@@ -1,7 +1,7 @@
 <?php
 /* Main page with two forms: sign up and log in */
-require 'connect.php';
 session_start();
+require 'connect.php';
 ?>
 <!DOCTYPE html>
 <html>

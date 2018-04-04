@@ -1,8 +1,8 @@
 <?php
+session_start();
 /* Displays user information and some useful messages */
 require 'connect.php';
 
-session_start();
 
 // Check if user is logged in using the session variable
 if ( $_SESSION['logged_in'] != 1 ) {
