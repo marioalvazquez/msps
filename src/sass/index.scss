@@ -334,3 +334,22 @@ p{
     text-transform: capitalize;
   }
 }
+
+
+//Event page
+.events-hero{
+  min-height: 500px;
+  background-size: cover;
+  background-position: 50%;
+  padding-top: 5rem;
+  h5{
+    font-style: italic;
+    font-weight: bold;
+    color: $yellow;
+  }
+  h1{
+    margin-top: 0;
+    text-transform: uppercase;
+    color: $white;
+  }
+}

@@ -6,8 +6,8 @@ $email = $mysqli->escape_string($_POST['email']);
 $result = $mysqli->query("SELECT * FROM user WHERE email='$email'");
 
 if ( $result->num_rows == 0 ){ // User doesn't exist
-    $_SESSION['message'] = "User with that email doesn't exist!";
-    header("location:error.php");
+    $_SESSION['message'] = "El usuario con el correo electrónico ingresado no existe";
+    header("location: http://msps.mariovazquez.com.mx/error.php");
 }
 else { // User exists
     $user = $result->fetch_assoc();
@@ -21,10 +21,10 @@ else { // User exists
         // This is how we'll know the user is logged in
         $_SESSION['logged_in'] = true;
 
-        header("location:profile.php");
+        header("location: http://msps.mariovazquez.com.mx/profile.php");
     }
     else {
-        $_SESSION['message'] = "You have entered wrong password, try again!";
-        header("location:error.php");
+        $_SESSION['message'] = "Contraseña incorrecta, intenta de nuevo!";
+        header("location: http://msps.mariovazquez.com.mx/error.php");
     }
 }

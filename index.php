@@ -197,73 +197,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
           <h5 class="yellow-text text-darken-1">Experiencias inolvidables</h5>
         </div>
       </div>
-      <div class="row">
-        <article class="event-item">
-          <div class="row">
-          <div class="col s3">
-            <div class="col s6 date-container center-align">
-              <p class="day">25</p>
-              <p class="date">Feb, 2018</p>
-            </div>
-            <div class="col s6 img-event" style="background-image:url('dist/img/happy.jpg')">
-
-            </div>
-          </div>
-          <div class="col s6 info-container">
-            <h5 class="white-text">Compartiendo nuestra fe y amor</h5>
-            <p class="grey-text text-lighten-3"><i class="material-icons yellow-text text-darken-1">date_range</i> Jueves, 8:00 Am - 10:00 Am</p>
-            <p class="grey-text text-lighten-3"><i class="material-icons yellow-text text-darken-1">place</i> Provincia de Jesús</p>
-            <p class="grey-text text-lighten-3"><i class="material-icons yellow-text text-darken-1">send</i> Aguascalientes, México, 2000</p>
-          </div>
-          <div class="col s3 btn-container valign-wrapper">
-            <a href="" class="waves-effect waves-light btn yellow darken-1">leer más</a>
-          </div>
-        </div>
-      </article>
-        <article class="event-item">
-          <div class="row">
-          <div class="col s3">
-            <div class="col s6 date-container center-align">
-              <p class="day">25</p>
-              <p class="date">Feb, 2018</p>
-            </div>
-            <div class="col s6 img-event" style="background-image:url('dist/img/happy.jpg')">
-
-            </div>
-          </div>
-          <div class="col s6 info-container">
-            <h5 class="white-text">Compartiendo nuestra fe y amor</h5>
-            <p class="grey-text text-lighten-3"><i class="material-icons yellow-text text-darken-1">date_range</i> Jueves, 8:00 Am - 10:00 Am</p>
-            <p class="grey-text text-lighten-3"><i class="material-icons yellow-text text-darken-1">place</i> Provincia de Jesús</p>
-            <p class="grey-text text-lighten-3"><i class="material-icons yellow-text text-darken-1">send</i> Aguascalientes, México, 2000</p>
-          </div>
-          <div class="col s3 btn-container valign-wrapper">
-            <a href="" class="waves-effect waves-light btn yellow darken-1">leer más</a>
-          </div>
-        </div>
-      </article>
-        <article class="event-item">
-          <div class="row">
-          <div class="col s3">
-            <div class="col s6 date-container center-align">
-              <p class="day">25</p>
-              <p class="date">Feb, 2018</p>
-            </div>
-            <div class="col s6 img-event" style="background-image:url('dist/img/happy.jpg')">
-
-            </div>
-          </div>
-          <div class="col s6 info-container">
-            <h5 class="white-text">Compartiendo nuestra fe y amor</h5>
-            <p class="grey-text text-lighten-3"><i class="material-icons yellow-text text-darken-1">date_range</i> Jueves, 8:00 Am - 10:00 Am</p>
-            <p class="grey-text text-lighten-3"><i class="material-icons yellow-text text-darken-1">place</i> Provincia de Jesús</p>
-            <p class="grey-text text-lighten-3"><i class="material-icons yellow-text text-darken-1">send</i> Aguascalientes, México, 2000</p>
-          </div>
-          <div class="col s3 btn-container valign-wrapper">
-            <a href="" class="waves-effect waves-light btn yellow darken-1">leer más</a>
-          </div>
-        </div>
-      </article>
+      <div class="row events-row">
       </div>
     </div>
   </div>
@@ -637,6 +571,116 @@ var map;
         $('a[href="#videoModal"]').on('click', function(event){
           player.playVideo();
         });
+
+        $.get('eventsjs.php', data => {
+          var events = JSON.parse(data);
+          console.log(events);
+          events.forEach(event => {
+            $('.events-row').append(
+              `<article class="event-item">`+
+              `<div class="row">`+
+              `<div class="col s3">`+
+              `<div class="col s6 date-container center-align">`+
+              `<p class="day">${new Date(event.date_hour).getDate()}</p>`+
+              `<p class="date">${getMonthCustom(event.date_hour)}</p>`+
+              `</div>`+
+              `<div class="col s6 img-event" style="background-image:url('dist/uploads/${event.image}')">`+
+              `</div>`+
+              `</div>`+
+              `<div class="col s6 info-container">`+
+              `<h5 class="white-text">${event.title}</h5>`+
+              `<p class="grey-text text-lighten-3">`+
+              `<i class="material-icons yellow-text text-darken-1">date_range</i>`+
+              ` ${getDateCustom(event.date_hour)}`+
+              `</p>`+
+              `<p class="grey-text text-lighten-3"><i class="material-icons yellow-text text-darken-1">place</i> ${event.place}</p>`+
+              `<p class="grey-text text-lighten-3"><i class="material-icons yellow-text text-darken-1">send</i> ${event.location}</p>`+
+              `</div>`+
+              `<div class="col s3 btn-container valign-wrapper">`+
+              `<a href="event.php?id=${event.id}" class="waves-effect waves-light btn yellow darken-1">leer más</a>`+
+              `</div>`+
+              `</div>`+
+              `</article>`);
+          });
+        });
+        function getMonthCustom(date) {
+          var newDate = new Date(date);
+          var month = newDate.getMonth();
+          var year = newDate.getFullYear();
+          switch (month) {
+            case 0:
+              return `Ene, ${year}`;
+              break;
+            case 1:
+              return `Feb, ${year}`;
+              break;
+            case 2:
+              return `Mar, ${year}`;
+              break;
+            case 3:
+              return `Abr, ${year}`;
+              break;
+            case 4:
+              return `May, ${year}`;
+              break;
+            case 5:
+              return `Jun, ${year}`;
+              break;
+            case 6:
+              return `Jul, ${year}`;
+              break;
+            case 7:
+              return `Ago, ${year}`;
+              break;
+            case 8:
+              return `Sep, ${year}`;
+              break;
+            case 9:
+              return `Oct, ${year}`;
+              break;
+            case 10:
+              return `Nov, ${year}`;
+              break;
+            case 11:
+              return `Dec, ${year}`;
+              break;
+            default:
+            break;
+          }
+        }
+        function getDateCustom(date) {
+          var newDate = new Date(date);
+          var stringDay;
+          var day = newDate.getDay();
+          var minutes = newDate.getMinutes();
+          if (minutes.toString().length == 1) minutes = `0${minutes}`;
+          var hour = `${newDate.getHours()}:${minutes}`;
+          switch (day) {
+            case 0:
+              stringDay = "Domingo";
+              break;
+            case 1:
+              stringDay = "Lunes";
+              break;
+            case 2:
+              stringDay = "Martes";
+              break;
+            case 3:
+              stringDay = "Miércoles";
+              break;
+            case 4:
+              stringDay = "Jueves";
+              break;
+            case 5:
+              stringDay = "Viernes";
+              break;
+            case 6:
+              stringDay = "Sábado";
+              break;
+            default:
+          }
+          return `${stringDay}, ${hour} hrs.`;
+        }
       });
     </script>
   </body>

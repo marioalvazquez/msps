@@ -1,63 +1,44 @@
 <?php
   require 'connect.php';
-  if (isset($_POST['submit'])) {
-    //file upload
-    $file = $_FILES['file'];
-
-    $fileName = $_FILES['file']['name'];
-    $fileTmpName = $_FILES['file']['tmp_name'];
-    $fileSize = $_FILES['file']['size'];
-    $fileError = $_FILES['file']['error'];
-    $fileType = $_FILES['file']['type'];
-
-    $fileExt = explode('.', $fileName);
-    $fileActualExt = strtolower(end($fileExt));
-
-    $allowed = array('png', 'jpg', 'jpeg');
-
-    //sql insert
-    $title = $mysqli->escape_string($_POST['title']);
-    $date = $mysqli->escape_string($_POST['date']);
-    $hour = $mysqli->escape_string($_POST['hour']).":00";
-    $place = $mysqli->escape_string($_POST['place']);
-    $location = $mysqli->escape_string($_POST['location']);
-    $description = $mysqli->escape_string($_POST['description']);
-
-    $date_hourStr = $date." ".$hour;
-    $date_hour = date('Y-m-d H:i:s', strtotime($date_hourStr));
-
-
-
-    if (in_array($fileActualExt, $allowed)) {
-      if ($fileError === 0) {
-        if ($fileSize < 1280000) {
-          $fileNameNew = uniqid('', true).".".$fileActualExt;
-          $fileDestination = 'dist/uploads/'.$fileNameNew;
-          move_uploaded_file($fileTmpName, $fileDestination);
-          $sql = "INSERT INTO event (title, date_hour, place, location, description, active, image) "
-                  . "VALUES ('$title','$date_hour', '$place', '$location', '$description', 1, '$fileNameNew')";
-          if (!$mysqli->query($sql)) {
-            echo "Variables recibidas\r\n"."\r\n".$title.$date.$hour.$place.$location.$description.$fileNameNew;
-            echo $sql;
-          }
-          else{
-            header("location:profile.php");
-          }
-        }
-        else{
-          echo "archivo demasiado grande";
-        }
-      }
-      else{
-        echo "error de archivo";
-      }
-    }
-    else{
-      echo "archivo no permitido";
-    }
-
-  }
-  else{
-    echo "error de isset submits";
-  }
+  $id = $mysqli->escape_string($_GET['id']);
+  $result = $mysqli->query("SELECT * FROM event WHERE id='$id'");
+  $event = $result->fetch_assoc();
  ?>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Evento - <?php echo $event['title'] ?></title>
+  </head>
+  <body>
+    <div class="events-hero" style="background:url('dist/uploads/<?php echo $event['image'] ?>')">
+      <div class="container">
+        <div class="col s8">
+          <h5 class="event-date"><?php echo $event['date_hour'] ?></h5>
+          <h1 class="left-align"><?php echo $event['title'] ?></h1>
+          <p class="white-text"><i class="material-icons yellow-text text-darken-1">place</i><?php echo $event['location'] ?></p>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <p class="center-align"><?php echo $event['description'] ?></p>
+        </div>
+        <div class="col s12">
+          <a href="index.php">Volver al inicio</a>
+        </div>
+      </div>
+    </div>
+    <script src="dist/js/jquery-2.1.1.min.js" charset="utf-8"></script>
+    <script src="dist/js/initializer.js" charset="utf-8"></script>
+    <script src="dist/js/index.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(() =>{
+        //changes date format MX
+        var date = new Date('<?php echo $event['date_hour'] ?>');
+        $('.event-date').text(getDateMx(date));
+      });
+    </script>
+  </body>
+</html>

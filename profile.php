@@ -122,7 +122,7 @@ else {
     <div id='test2' class='col s12'>
       <h3 class='center-align'>Eventos</h3>
       <div class="col s8 offset-s2">
-        <form class="form-event" id="formEvent" action="event.php" method="post" enctype='multipart/form-data'>
+        <form class="form-event" id="formEvent" action="register-event.php" method="post" enctype='multipart/form-data'>
           <div class="row">
             <div class="input-field col s12">
                 <input id="title" type="text" class="validate" name="title">
