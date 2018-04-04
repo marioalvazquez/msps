@@ -23,7 +23,7 @@ else { // User exists
         // This is how we'll know the user is logged in
         $_SESSION['logged_in'] = true;
 
-        header("location: profile.php");
+        echo "<script>location.href = 'profile.php'</script>";
     }
     else {
         $_SESSION['message'] = "Contraseña incorrecta, intenta de nuevo!";
