@@ -37,11 +37,10 @@
           $sql = "INSERT INTO event (title, date_hour, place, location, description, active, image) "
                   . "VALUES ('$title','$date_hour', '$place', '$location', '$description', 1, '$fileNameNew')";
           if (!$mysqli->query($sql)) {
-            echo "Variables recibidas\r\n"."\r\n".$title.$date.$hour.$place.$location.$description.$fileNameNew;
-            echo $sql;
+
           }
           else{
-            header("location:profile.php");
+            echo "<script>location.href = 'profile.php'</script>";
           }
         }
         else{

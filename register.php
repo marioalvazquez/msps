@@ -18,7 +18,7 @@ $result = $mysqli->query("SELECT * FROM user WHERE email='$email'") or die($mysq
 if ( $result->num_rows > 0 ) {
 
     $_SESSION['message'] = 'Ya existe un usuario con esta cuenta de correo electrónico';
-    header("location:error.php");
+    echo "<script>location.href = 'error.php'</script>";
 }
 else { // Email doesn't already exist in a database, proceed...
 
@@ -42,13 +42,13 @@ else { // Email doesn't already exist in a database, proceed...
         $message_body = "Hola!\r\n¡Gracias por registrarte en nuestro sitio web!\r\nPor favor, accede a este link para activar tu cuenta: http://msps.mariovazquez.com.mx/verify.php?email=".$email."&hash=".$hash;
         $headers = "From: Misioneros del Espíritu Santo<contacto@misionerosdelespiritusantopfj.com>";
         mail($to, $subject, $message_body, $headers);
-        header("location:profile.php");
+        echo "<script>location.href = 'profile.php'</script>";
         exit;
     }
 
     else {
         $_SESSION['message'] = 'Algo salió mal, vuelve a intentar más tarde!';
-        header("location:error.php");
+        echo "<script>location.href = 'error.php'</script>";
         exit;
     }
 }

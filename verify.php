@@ -18,7 +18,7 @@ if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['hash']) && !
     {
         $_SESSION['message'] = "Tu cuenta ya ha sido activada o has ingresado un link inválido!";
 
-        header("location:error.php");
+        echo "<script>location.href = 'error.php'</script>";
     }
     else {
         $_SESSION['message'] = "Tu cuenta ha sido activada satisfactoriamente!";
@@ -27,11 +27,11 @@ if(isset($_GET['email']) && !empty($_GET['email']) AND isset($_GET['hash']) && !
         $mysqli->query("UPDATE user SET active='1' WHERE email='$email'") or die($mysqli->error);
         $_SESSION['active'] = 1;
 
-        header("location:success.php");
+        echo "<script>location.href = 'success.php'</script>";
     }
 }
 else {
     $_SESSION['message'] = "Los parámetros obtenidos para verificar la cuenta son inválidos!";
-    header("location:error.php");
+    echo "<script>location.href = 'error.php'</script>";
 }
 ?>

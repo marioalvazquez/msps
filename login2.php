@@ -9,7 +9,7 @@ $result = $mysqli->query("SELECT * FROM user WHERE email='$email'");
 
 if ( $result->num_rows == 0 ){ // User doesn't exist
     $_SESSION['message'] = "El usuario con el correo electrónico ingresado no existe";
-    header("location: error.php");
+    echo "<script>location.href = 'error.php'</script>";
 }
 else { // User exists
     $user = $result->fetch_assoc();
@@ -27,7 +27,7 @@ else { // User exists
     }
     else {
         $_SESSION['message'] = "Contraseña incorrecta, intenta de nuevo!";
-        header("location: error.php");
+        echo "<script>location.href = 'error.php'</script>";
     }
 }
 ?>

@@ -5,7 +5,7 @@
   $delete_file = "DELETE FROM event WHERE id='$id'";
 
   if ($mysqli->query($delete_file) && unlink('dist/uploads/'.$name)) {
-    header("location:profile.php");
+    echo "<script>location.href = 'profile.php'</script>";
   }
 
  ?>

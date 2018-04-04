@@ -23,21 +23,21 @@
           $sql = "INSERT INTO file (name, unique_name, type) "
                   . "VALUES ('$fileName','$fileNameNew', '$fileActualExt')";
           $mysqli->query($sql);
-          header("location:profile.php");
+          echo "<script>location.href = 'profile.php'</script>";
         }
         else{
           $_SESSION['message'] = 'El archivo seleccionado es demasiado grande';
-          header("location:error.php");
+          echo "<script>location.href = 'error.php'</script>";
         }
       }
       else{
         $_SESSION['message'] = 'Ha ocurrido un error, vuelve a intentar más tarde';
-        header("location:error.php");
+        echo "<script>location.href = 'error.php'</script>";
       }
     }
     else{
       $_SESSION['message'] = 'No puedes subir arhivos del tipo seleccionado';
-      header("location:error.php");
+      echo "<script>location.href = 'error.php'</script>";
     }
 
   }
