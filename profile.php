@@ -2,8 +2,6 @@
 session_start();
 /* Displays user information and some useful messages */
 require 'connect.php';
-
-
 // Check if user is logged in using the session variable
 if ( $_SESSION['logged_in'] != 1 ) {
   $_SESSION['message'] = "Inicia sesión antes de ingresar a esta página!";

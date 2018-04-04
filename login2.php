@@ -23,10 +23,11 @@ else { // User exists
         // This is how we'll know the user is logged in
         $_SESSION['logged_in'] = true;
 
-        header("location: http://msps.mariovazquez.com.mx/profile.php");
+        header("location: profile.php");
     }
     else {
         $_SESSION['message'] = "Contraseña incorrecta, intenta de nuevo!";
         header("location: error.php");
     }
 }
+?>
