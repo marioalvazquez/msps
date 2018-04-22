@@ -20,10 +20,10 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 
     </div>
   </div>
-    <div class="slider">
+    <div class="slider" style="height: 500px !important">
     <ul class="slides">
       <li>
-        <img src="dist/img/one4.jpg"> <!-- image -->
+        <img src="dist/img/one.jpg"> <!-- image -->
         <div class="caption left-align">
           <h3>MISIONEROS<br/> DEL ESPÍRITU SANTO</h3>
           <h5 class="light grey-text text-lighten-3">Provincia Félix de Jesús</h5>
@@ -85,19 +85,31 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
             <li>
               <div class="caption left-align">
                 <h3 class="yellow-text text-darken-1">Humanos</h3>
-                <p class="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="light white-text">
+                  Somos hombres que hemos decidido apostar la vida por Dios sirviendo a la humanidad. Nuestra
+meta es convertirnos día a día en Jesús, aprendiendo a amar como él ama y dando a conocer a un
+Dios que es Padre misericordioso siendo movidos por la fuerza del Espíritu Santo.
+                </p>
               </div>
             </li>
             <li>
               <div class="caption left-align">
                 <h3 class="yellow-text text-darken-1">Fraternos</h3>
-                <p class="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="light white-text">Nuestro modo de ver y seguir a Jesús es como “Sacerdote y Víctima”. A la forma de Jesús
+Sacerdote buscamos convertirnos en puentes entre Dios y la humanidad, manifestando la cercanía
+del Padre a una humanidad sedienta de salvación, de amor los unos con los otros.</p>
               </div>
             </li>
             <li>
               <div class="caption right-align">
                 <h3 class="yellow-text text-darken-1">Solidarios</h3>
-                <p class="light white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p class="light white-text">
+                  Como Jesús Víctima entregamos por amor nuestra propia vida como una ofrenda agradable a Dios
+que sirva para que otros tengan la vida abundante que Cristo vino a traer al mundo por medio del
+Espíritu Santo. De ese modo buscamos que todo lo que hacemos ayude a los demás a vivir más
+feliz y dignamente, apoyándose entre todos y formando una Iglesia donde todos tengan parte por
+igual.
+                </p>
               </div>
             </li>
           </ul>
@@ -121,8 +133,8 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
         <div class="col s12">
           <ul id="tabs-swipe-demo" class="tabs">
     <li class="tab col s4"><a href="#test-swipe-1" class="white-text">¿Cómo ser Misionero?</a></li>
-    <li class="tab col s4"><a class="active white-text" href="#test-swipe-2">Experiencias</a></li>
-    <li class="tab col s4"><a href="#test-swipe-3" class="white-text">Etapas</a></li>
+    <!--<li class="tab col s4"><a class="active white-text" href="#test-swipe-2">Experiencias</a></li>
+    <li class="tab col s4"><a href="#test-swipe-3" class="white-text">Etapas</a></li>-->
   </ul>
   <div id="test-swipe-1" class="col s12 white-text text-accent-2">
     <ul class="collapsible" data-collapsible="accordion">
@@ -163,12 +175,12 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
       <span></span>
     </div>
   </div>
-  <div id="test-swipe-2" class="col s12 white-text text-accent-2">
+  <!--<div id="test-swipe-2" class="col s12 white-text text-accent-2">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
   </div>
   <div id="test-swipe-3" class="col s12 white-text text-accent-2">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum iusto modi a eius qui dolore reprehenderit similique possimus nobis nisi sint animi, nesciunt eligendi sequi cumque optio et inventore perspiciatis.
-  </div>
+  </div>-->
         </div>
       </div>
     </div>
@@ -179,13 +191,20 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
         <h3 class="center-align white-text low-title">
           CONTEMPLATIVOS
         </h3>
-        <p class="white-text center-align hidden-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p class="white-text center-align hidden-text">
+          Vivimos en Comunidad, es decir, varios Misioneros del Espíritu Santo compartimos en una misma
+casa la vida, las alegrías, los trabajos, las dificultades personales y comunitarias buscando siempre
+un ambiente fraterno.
+        </p>
       </div>
       <div class="col s12 m6 action-men">
         <h3 class="center-align white-text low-title">
           HOMBRES DE ACCIÓN
         </h3>
-        <p class="white-text center-align hidden-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p class="white-text center-align hidden-text">Nos caracteriza la cercanía al Pueblo de Dios en general.
+Misión
+El regalo que Dios nos ha dado para ofrecerlo a la Iglesia es el acompañamiento o dirección
+espiritual.</p>
       </div>
     </div>
   </div>

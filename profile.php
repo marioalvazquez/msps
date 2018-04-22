@@ -195,7 +195,7 @@ else {
                     <?php echo $row['place'] ?>
                   </td>
                   <td>
-                    <a href="edit-event.php?id=<?php echo $row['id'] ?>"><i class="material-icons">create</i></a>
+                    <!--<a href="edit-event.php?id=<?php echo $row['id'] ?>"><i class="material-icons">create</i></a>-->
                     <a href="delete-event.php?id=<?php echo $row['id'] ?>&name=<?php echo $row['image'] ?>" onclick="return confirm('¿Estás seguro de que quieres borrar este evento?')"><i class="material-icons">delete_forever</i></a>
                   </td>
                 </tr>
