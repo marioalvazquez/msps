@@ -323,7 +323,7 @@ justicia y paz, apoyándonos entre todos para formar una Iglesia alegre, incluye
   </div>
 <script src="dist/js/jquery-2.1.1.min.js" charset="utf-8"></script>
 <script src="dist/js/materialize.min.js" charset="utf-8"></script>
-<script src="src/js/index.js" charset="utf-8"></script>
+<script src="dist/js/index.js" charset="utf-8"></script>
 <script src="dist/js/initializer.js" charset="utf-8"></script>
 <script>
 var map;

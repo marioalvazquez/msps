@@ -3,8 +3,16 @@
     "latLon": "19.39068,-99.2837001",
     "cities":[
       {
+        "name": "Aguascalientes",
+        "latLon" : "21.884353,-102.3061528"
+      },
+      {
       "name": "Baja California",
       "latLon": "32.504834,-116.991677"
+    },
+    {
+      "name": "Ciudad de México",
+      "latLon" : "19.3543316,-99.1497214"
     },
     {
       "name": "Durango",
@@ -16,7 +24,7 @@
       },
       {
         "name": "Coahuila",
-        "latLon" : "27.1983689,-104.1459776"
+        "latLon" : "25.4296138,-101.0115342"
       },
       {
         "name": "San Luis Potosí",

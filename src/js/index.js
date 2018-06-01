@@ -69,8 +69,15 @@ $('.location-to-country').on('click', (ev, ef) => {
         ev.preventDefault();
         var cityCoord = $(ev.currentTarget).attr('data-latLon').split(',');
         map.setCenter(new google.maps.LatLng(cityCoord[0],cityCoord[1]));
-        if (cityCoord[0] == 21.026307) map.setZoom(9);
-        else map.setZoom(12);
+        if (cityCoord[0] == 21.026307){
+          map.setZoom(9);
+        }
+        else if (cityCoord[0] == 25.4296138){
+          map.setZoom(15);
+        }
+        else{
+          map.setZoom(12);
+        }
       });
     }).fail(function(data){
       console.log("Algo salió mal");
