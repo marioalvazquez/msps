@@ -1,0 +1,9 @@
+banner:
+	- principal: no cortar caras
+	- quitar transparencia de colores en imágenes
+	- 
+somos acompañantes:
+	- font++
+	- ++tiempo de transiciones
+	- círculos de navegación más grandes
+	- 

@@ -1,10 +1,25 @@
 [
   {
     "id": 1,
+    "name": "Postulado Provincia Félix de Jesús",
+    "location":{
+      "lat": 21.8844135,
+      "lon": -102.3059412,
+      "state": "Aguascalientes",
+      "city": "Aguascalientes",
+      "address": "Guadalupe 424",
+      "neighborhood": "Barrio de Guadalupe",
+      "zipCode": 20050,
+      "tel": ["(449) 916 1355"],
+      "gallery": []
+    }
+  },
+  {
+    "id": 2,
     "name": "Parroquia del Espíritu Santo",
     "location":{
-      "lat": 32.5066065,
-      "lon": -117.0087231,
+      "lat": 32.506983,
+      "lon": -117.0087972,
       "state": "Baja California",
       "city": "Tijuana",
       "address": "Rosales 10611 y Cumpas",
@@ -15,29 +30,29 @@
     }
   },
   {
-    "id": 2,
-    "name": "Parroquia de Nuestra Señora de Guadalupe",
+    "id": 3,
+    "name": "Parroquia de Nuestra Señora de Guadalupe: La Mesa",
     "location":{
-      "lat": 32.4938335,
-      "lon": -116.9582224,
+      "lat": 32.4930808,
+      "lon": -116.9576765,
       "state": "Baja California",
       "city": "Tijuana",
-      "address": "Blvd. Díaz Ordaz 1393, Lavilla",
-      "neighborhood": "La Mesa",
-      "zipCode": 22105,
-      "tel": ["(664) 686 8377", "(664) 621 8355"],
+      "address": "Calzada de Guadalupe 4",
+      "neighborhood": "La Villa. La Mesa",
+      "zipCode": 22103,
+      "tel": ["(664) 686 8377", "(664) 686 9588"],
       "gallery": []
     }
   },
   {
-    "id": 3,
-    "name": "Templo Expiatorio del Sagrado Corazón de Jesús",
+    "id": 4,
+    "name": "Templo Expiatorio del Sagrado Corazón",
     "location":{
-      "lat": 24.0249794,
-      "lon": -104.6618745,
+      "lat": 24.0248026,
+      "lon": -104.6613997,
       "state": "Durango",
       "city": "Durango",
-      "address": "Calle 5 de Febrero S/N",
+      "address": "Calle 5 de Febrero S/N y Miguel de Cervantes Saavedra",
       "neighborhood": "Zona Centro",
       "zipCode": 34000,
       "tel": ["(618) 811 2696", "(618) 812 9313"],
@@ -45,11 +60,25 @@
     }
   },
   {
-    "id": 4,
-    "name": "Servicio Obras de la Cruz",
+    "id": 5,
+    "name": "Parroquia Cruz del Apostolado",
     "location":{
-      "lat": 25.6923649,
-      "lon": -100.3531364,
+      "lat": 25.7111613,
+      "lon": -100.215022,
+      "state": "Nuevo León",
+      "city": "Guadalupe",
+      "address": "Yugo 1090 esquina con Lindero",
+      "neighborhood": "Fracc. Villa de San Miguel",
+      "zipCode": 67110,
+      "tel": ["(81) 8364 7745"],
+      "gallery": []
+    }
+  },{
+    "id": 6,
+    "name": "Comunidad de Servicio Sacerdotal",
+    "location":{
+      "lat": 25.6923022,
+      "lon": -100.3530479,
       "state": "Nuevo León",
       "city": "Monterrey",
       "address": "Panamá 127",
@@ -60,86 +89,56 @@
     }
   },
   {
-    "id": 5,
-    "name": "Santoario de Nuestra Señora de Guadalupe",
+    "id": 7,
+    "name": "Santuario de Nuestra Señora de Guadalupe",
     "location":{
-      "lat": 25.6923649,
-      "lon": -100.3531364,
+      "lat": 25.4296138,
+      "lon": -101.0115342,
       "state": "Coahuila",
       "city": "Saltillo",
-      "address": "Panamá 127",
-      "neighborhood": "Vista Hermosa",
-      "zipCode": 64620,
-      "tel": ["(81) 8346 0694"],
-      "gallery": []
-    }
-  },
-  {
-    "id": 6,
-    "name": "Santoario de Nuestra Señora de Guadalupe",
-    "location":{
-      "lat": 25.6923649,
-      "lon": -100.3531364,
-      "state": "Coahuila",
-      "city": "Saltillo",
-      "address": "Pérez Treviño y Ahuizotl 425",
+      "address": "Pérez Treviño y Ahuizotl #425",
       "neighborhood": "Col. Centro",
       "zipCode": 25000,
-      "tel": ["(844) 414 9494", "(844) 414 2057", "(844) 414 1717"],
-      "gallery": []
-    }
-  },
-  {
-    "id": 7,
-    "name": "Parroquia de la Cruz del Apostolado",
-    "location":{
-      "lat": 25.7113757,
-      "lon": -100.2144789,
-      "state": "Nuevo León",
-      "city": "Guadalupe",
-      "address": "Hacienda 809",
-      "neighborhood": "Fracc. Villa de San Miguel",
-      "zipCode": 67110,
-      "tel": ["(81) 2089 4032"],
+      "tel": ["(844) 414 9494", "(844) 414 2057, (844) 414 1717", "(844) 414 1715, (844) 410 2508"],
       "gallery": []
     }
   },
   {
     "id": 8,
+    "name": "CECAP",
+    "location":{
+      "lat": 25.4296138,
+      "lon": -101.0098874,
+      "state": "Coahuila",
+      "city": "Saltillo",
+      "address": "Ahuizotl 448",
+      "neighborhood": "Col. Centro",
+      "zipCode": 25000,
+      "tel": ["(844) 414 1715", "(844) 410 2508"],
+      "gallery": []
+    }
+  },
+  {
+    "id": 9,
     "name": "Parroquia de Santa Ana",
     "location":{
-      "lat": 22.1658576,
-      "lon": -100.9584641,
+      "lat": 22.7528408,
+      "lon": -101.0764045,
       "state": "San Luis Potosí",
       "city": "Guadalcázar",
       "address": "Carretera San Luis Potosí-Matehuala km 94",
-      "neighborhood": "Posas de Santa Ana",
+      "neighborhood": "Pozas de Santa Ana",
       "zipCode": 78790,
       "tel": ["(444) 154 3446", "(444) 118 1056"],
       "gallery": []
     }
   },
   {
-    "id": 9,
-    "name": "Centro de Espiritualidad del Apostolado Monterrey CECAP Monterrey",
-    "location":{
-      "lat": 22.1658576,
-      "lon": -100.9584641,
-      "state": "San Luis Potosí",
-      "city": "San Luis Potosí",
-      "address": "Arenisca 550-A",
-      "neighborhood": "Col. San Alberto",
-      "zipCode": 78147,
-      "tel": ["(444) 162 3757", "(444) 833 2585"],
-      "gallery": []
-    }
-  },
-  {
     "id": 10,
-    "name": "Santuario de la Cruz del Apostolado",
+    "name": "Centro de Espiritualidad de la Cruz del Apostolado CECAP",
     "location":{
-      "lat": 22.170161,
-      "lon": -101.0128295,
+      "lat": 22.1696971,
+      "lon": -101.0134082,
       "state": "San Luis Potosí",
       "city": "San Luis Potosí",
       "address": "Arenisca 550-A",
@@ -151,12 +150,42 @@
   },
   {
     "id": 11,
-    "name": "Jesús María Noviciado SLP",
+    "name": "Librería la Cruz",
     "location":{
-      "lat": 21.9201538,
-      "lon": -100.9116048,
+      "lat": 22.1486723,
+      "lon": -100.9773475,
       "state": "San Luis Potosí",
       "city": "San Luis Potosí",
+      "address": "Zaragoza 605, esq. Abasolo",
+      "neighborhood": "Col. Centro",
+      "zipCode": 78000,
+      "tel": ["(444) 814 9735"],
+      "gallery": []
+    }
+  },
+  {
+    "id": 12,
+    "name": "JESÚS MARÍA - Santuario de la Cruz del Apostolado",
+    "location":{
+      "lat": 21.9186521,
+      "lon": -100.927016,
+      "state": "San Luis Potosí",
+      "city": "Jesús María",
+      "address": "Félix Rougier #1",
+      "neighborhood": "Jesús María - Villa de Reyes",
+      "zipCode": 79500,
+      "tel": ["(485) 852 7101", "(485) 852 7107", "(485) 852 7104"],
+      "gallery": []
+    }
+  },
+  {
+    "id": 13,
+    "name": "Jesús María Noviciado SLP",
+    "location":{
+      "lat": 21.9239834,
+      "lon": -100.9100843,
+      "state": "San Luis Potosí",
+      "city": "Jesús María",
       "address": "Manuel Espinosa Pitman 100",
       "neighborhood": "Villa de Reyes",
       "zipCode": 79500,
@@ -165,37 +194,22 @@
     }
   },
   {
-    "id": 12,
-    "name": "Templo Santa Teresita del Niño de Jesús",
-    "location":{
-      "lat": 21.1238623,
-      "lon": -101.6910775,
-      "state": "Guanajuato",
-      "city": "León",
-      "address": "República de Chile 114",
-      "neighborhood": "Col. Bellavista",
-      "zipCode": 37360,
-      "tel": ["(477) 713 3686", "(477) 716 3354"],
-      "gallery": []
-    }
-  },
-  {
-    "id": 13,
-    "name": "Templo Santa Teresita del Niño de Jesús",
-    "location":{
-      "lat": 21.1238623,
-      "lon": -101.6910775,
-      "state": "Guanajuato",
-      "city": "León",
-      "address": "República de Chile 114",
-      "neighborhood": "Col. Bellavista",
-      "zipCode": 37360,
-      "tel": ["(477) 713 3686", "(477) 716 3354"],
-      "gallery": []
-    }
-  },
-  {
     "id": 14,
+    "name": "Templo Santa Teresita del Niño de Jesús",
+    "location":{
+      "lat": 21.1235142,
+      "lon": -101.6911705,
+      "state": "Guanajuato",
+      "city": "León",
+      "address": "República de Chile 114",
+      "neighborhood": "Col. Bellavista",
+      "zipCode": 37360,
+      "tel": ["(477) 713 3686", "(477) 716 3354"],
+      "gallery": []
+    }
+  },
+  {
+    "id": 15,
     "name": "Santuario de Nuestra Señora de Guadalupe del Centro",
     "location":{
       "lat": 20.6752481,
@@ -210,26 +224,41 @@
     }
   },
   {
-    "id": 15,
-    "name": "Casa Provincial",
+    "id": 16,
+    "name": "Economato Provincial",
     "location":{
-      "lat": 20.638548,
-      "lon": -103.397763,
+      "lat": 20.6395708,
+      "lon": -103.4075226,
       "state": "Jalisco",
       "city": "Zapopan",
-      "address": "Esmeralda",
+      "address": "Av. Félix Rougier 3825",
       "neighborhood": "Col. Loma Bonita",
-      "zipCode": 45060,
-      "tel": ["(33) 3631 5046", "(33) 3631 5585"],
+      "zipCode": 45086,
+      "tel": ["(33) 3632 1283", "(33) 3632 1279"],
       "gallery": []
     }
   },
   {
-    "id": 16,
-    "name": "Escuela Apostólica",
+    "id": 17,
+    "name": "Centro de Espiritualidad Cruz del Apostolado - CECAP - Guadalajara",
     "location":{
-      "lat": 20.6398353,
-      "lon": -103.4079595,
+      "lat": 20.6380247,
+      "lon": -103.3978568,
+      "state": "Jalisco",
+      "city": "Zapopan",
+      "address": "Av. Topacio 3000",
+      "neighborhood": "Col. Loma Bonita",
+      "zipCode": 45060,
+      "tel": ["(33) 3631 3050", "(33) 3133 2525"],
+      "gallery": []
+    }
+  },
+  {
+    "id": 18,
+    "name": "Escuela Apostólica de Occidente",
+    "location":{
+      "lat": 20.6394875,
+      "lon": -103.4075163,
       "state": "Jalisco",
       "city": "Zapopan",
       "address": "Av. Conchita 3067",
@@ -240,11 +269,26 @@
     }
   },
   {
-    "id": 17,
-    "name": "Filosofado",
+    "id": 19,
+    "name": "HYCIG (Instituto de Humanidades y Ciencias de Guadalajara)",
+    "location":{
+      "lat": 20.6386352,
+      "lon": -103.4094363,
+      "state": "Jalisco",
+      "city": "Zapopan",
+      "address": "Av. Felix Rougier 3875",
+      "neighborhood": "Col. Loma Bonita",
+      "zipCode": 44590,
+      "tel": ["(33) 5000 1600", "(33) 3631 5124"],
+      "gallery": []
+    }
+  },
+  {
+    "id": 20,
+    "name": "Comunidad de Patria Nueva",
     "location":{
       "lat": 20.6215559,
-      "lon": -103.377902,
+      "lon": -103.3795422,
       "state": "Jalisco",
       "city": "Guadalajara",
       "address": "Concepción Loy #4059",
@@ -255,22 +299,37 @@
     }
   },
   {
-    "id": 18,
-    "name": "Templo Cristo Sacerdote",
+    "id": 21,
+    "name": "Templo de Cristo Sacerdote",
     "location":{
-      "lat": 20.6388633,
-      "lon": -103.4081488,
+      "lat": 20.6388231,
+      "lon": -103.4069686,
       "state": "Jalisco",
       "city": "Zapopan",
       "address": "Av. Conchita 3015",
       "neighborhood": "Col. Loma Bonita",
       "zipCode": 45087,
-      "tel": ["(33) 3631 7333", "(33) 3634 1134"],
+      "tel": ["(33) 3631 7333", "(33) 3634 1134" , "(33) 3632 3089"],
       "gallery": []
     }
   },
   {
-    "id": 19,
+    "id": 22,
+    "name": "Teologado Tonalco",
+    "location":{
+      "lat": 19.3543533,
+      "lon": -99.1476558,
+      "state": "Ciudad de México",
+      "city": "Coyoacán",
+      "address": "20 de agosto #75",
+      "neighborhood": "Col. San Diego Churubusco",
+      "zipCode": 4120,
+      "tel": ["(55) 5689 6256"],
+      "gallery": []
+    }
+  },
+  {
+    "id": 23,
     "name": "Parroquia de Santa María Della Croce",
     "location":{
       "lat": 45.37519,
@@ -285,7 +344,7 @@
     }
   },
   {
-    "id": 20,
+    "id": 24,
     "name": "Parroquia de S. Ma. Liberatrice",
     "location":{
       "lat": 45.4366499,
@@ -296,21 +355,6 @@
       "neighborhood": "Crema",
       "zipCode": 20141,
       "tel": ["(39) 0289 462092"],
-      "gallery": []
-    }
-  },
-  {
-    "id": 21,
-    "name": "Parroquia del Espíritu Santo",
-    "location":{
-      "lat": 32.506983,
-      "lon": -117.0087972,
-      "state": "Baja California",
-      "city": "Tijuana",
-      "address": "Rosales 10611 y Cumpas",
-      "neighborhood": "Fracc. Chapultepec",
-      "zipCode": 22420,
-      "tel": ["(664) 621 8507", "(664) 621 8355"],
       "gallery": []
     }
   }

@@ -22,14 +22,15 @@ session_start();
         endif;
         ?>
         </p>
-        <a href="index.php" class="waves-effect waves-light btn yellow darken-1">Inicio</a>    
+        <a href="index.php" class="waves-effect waves-light btn yellow darken-1">Inicio</a>
       </div>
     </div>
 
   </div>
 </div>
 <script src="dist/js/jquery-2.1.1.min.js" charset="utf-8"></script>
-<script src="dist/js/initializer.js" charset="utf-8"></script>
+<script src="dist/js/materialize.min.js" charset="utf-8"></script>
 <script src="dist/js/index.js" charset="utf-8"></script>
+<script src="dist/js/initializer.js" charset="utf-8"></script>
 </body>
 </html>

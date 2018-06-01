@@ -55,7 +55,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
       </div>
     </div>
     <div class="row">
-      <div class="col s4" id="timeline-col">
+      <div class="col s3" id="timeline-col">
         <section class="programa">
            <ul>
             <li>
@@ -78,44 +78,49 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
           </section>
 
       </div>
-      <div class="col s8" id="us-info-col">
-        <div class="col s12 m6">
+      <div class="col s9" id="us-info-col">
+        <div class="col s12 m8">
           <div class="slider">
           <ul class="slides">
             <li>
               <div class="caption left-align">
                 <h3 class="yellow-text text-darken-1">Humanos</h3>
-                <p class="light white-text">
-                  Somos hombres que hemos decidido apostar la vida por Dios sirviendo a la humanidad. Nuestra
-meta es convertirnos día a día en Jesús, aprendiendo a amar como él ama y dando a conocer a un
-Dios que es Padre misericordioso siendo movidos por la fuerza del Espíritu Santo.
+                <p class="light white-text fs-3">
+                  Somos hombres que hemos decidido apostar la vida por Dios sirviendo a la humanidad.
+                  Nuestra meta es transformarnos día a día en Jesús, aprendiendo a amar como él
+                  y dando a conocer a un Dios que es Padre misericordioso, siendo movidos
+                  por la fuerza del Espíritu Santo, para acompañar las situaciones
+                  de dolor y fragilidad humana.
                 </p>
               </div>
             </li>
             <li>
               <div class="caption left-align">
                 <h3 class="yellow-text text-darken-1">Fraternos</h3>
-                <p class="light white-text">Nuestro modo de ver y seguir a Jesús es como “Sacerdote y Víctima”. A la forma de Jesús
-Sacerdote buscamos convertirnos en puentes entre Dios y la humanidad, manifestando la cercanía
-del Padre a una humanidad sedienta de salvación, de amor los unos con los otros.</p>
+                <p class="light white-text fs-3">
+                  Nuestro modo de ver y seguir a Jesús es como “Sacerdote y Víctima”.
+                  Buscamos transformarnos en puente de comunión entre Dios y la humanidad,
+                  manifestando la cercanía de Dios Padre a una humanidad sedienta de amor,
+                  unión e inclusión. Vivimos y proponemos comunidades de hermanos donde todos
+                  tienen su lugar y participación.
+                </p>
               </div>
             </li>
             <li>
               <div class="caption right-align">
                 <h3 class="yellow-text text-darken-1">Solidarios</h3>
-                <p class="light white-text">
-                  Como Jesús Víctima entregamos por amor nuestra propia vida como una ofrenda agradable a Dios
-que sirva para que otros tengan la vida abundante que Cristo vino a traer al mundo por medio del
-Espíritu Santo. De ese modo buscamos que todo lo que hacemos ayude a los demás a vivir más
-feliz y dignamente, apoyándose entre todos y formando una Iglesia donde todos tengan parte por
-igual.
+                <p class="light white-text fs-3">
+                  Como Jesús, entregamos por amor nuestra vida como ofrenda agradable a Dios
+que sirva para que otros tengan la alegría plena que Él vino a traer al mundo por medio del
+Espíritu Santo. De ese modo, buscamos acompañar propuestas que ayuden a vivir a los demás con dignidad,
+justicia y paz, apoyándonos entre todos para formar una Iglesia alegre, incluyente y actualizada.
                 </p>
               </div>
             </li>
           </ul>
         </div>
         </div>
-        <div class="col s12 m6 center align">
+        <div class="col s12 m4 center align">
           <img src="dist/img/us.jpg" alt="Happiness" class="circle responsive-img z-depth-3">
         </div>
       </div>
@@ -186,25 +191,35 @@ igual.
     </div>
   </div>
   <div class="had-container" id="lifeStyle">
+    <div class="row center-align">
+      <div class="col-sm-12">
+        <h2 class="white-text text-accent-2">ESTILO DE VIDA</h2>
+      </div>
+    </div>
     <div class="row">
       <div class="col s12 m6 contemplatives">
         <h3 class="center-align white-text low-title">
           CONTEMPLATIVOS
         </h3>
         <p class="white-text center-align hidden-text">
-          Vivimos en Comunidad, es decir, varios Misioneros del Espíritu Santo compartimos en una misma
-casa la vida, las alegrías, los trabajos, las dificultades personales y comunitarias buscando siempre
-un ambiente fraterno.
+          Estamos llamados al igual que Jesús, apasionado de Dios Padre, a recibir su amor y
+          desde ahí dejarnos transformar, para descubrir cuál es su voluntad amorosa y llevarla
+          a la vida en todas las situaciones de la realidad.
+          En nuestro ambiente de comunidad vivimos momentos de silencio y oración continua,
+          para vivir la "atención amorosa"
+          que Félix de Jesús nos pidió.
         </p>
       </div>
       <div class="col s12 m6 action-men">
         <h3 class="center-align white-text low-title">
           HOMBRES DE ACCIÓN
         </h3>
-        <p class="white-text center-align hidden-text">Nos caracteriza la cercanía al Pueblo de Dios en general.
-Misión
-El regalo que Dios nos ha dado para ofrecerlo a la Iglesia es el acompañamiento o dirección
-espiritual.</p>
+        <p class="white-text center-align hidden-text">
+          Fruto de la contemplación, nuestras propuestas pastorales buscan hacer crecer
+          a los demás como hijos amados y vivir su vocación con plenitud.
+          Nos caracteriza la cercanía al Pueblo de Dios y celebramos juntos la alegría
+          por la oportunidad de transformar el mundo como Jesús lo soñó.
+        </p>
       </div>
     </div>
   </div>
@@ -307,13 +322,15 @@ espiritual.</p>
     </div>
   </div>
 <script src="dist/js/jquery-2.1.1.min.js" charset="utf-8"></script>
+<script src="dist/js/materialize.min.js" charset="utf-8"></script>
+<script src="src/js/index.js" charset="utf-8"></script>
 <script src="dist/js/initializer.js" charset="utf-8"></script>
 <script>
 var map;
       function initMap() {
         var uluru = {lat: 41.9033189, lng: -12.4122659};
         map = new google.maps.Map(document.getElementById('findUsMap'), {
-          zoom: 3,
+          zoom: 5,
           center: uluru
           /*,
           styles: [

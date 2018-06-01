@@ -21,6 +21,9 @@ h1,h2,h3{
   font-family: 'Lato', sans-serif;
   font-weight: 900;
 }
+.fs-3{
+  font-size: 18px;
+}
 .h1{
   font-weight: 400;
   letter-spacing: 5px;
@@ -43,6 +46,10 @@ h1,h2,h3{
 }
 
 //Customs
+.slider .indicators .indicator-item{
+  width: 20px !important;
+  height: 20px !important;
+}
 ul.list-inline {
     display: flex;
     align-items: center;
@@ -96,7 +103,8 @@ position: relative;
 .mano-felix{
   position: absolute;
   bottom: 0;
-  width: 250px;
+  width: 380px;
+  left: -65px;
   z-index: -1000;
 }
 }

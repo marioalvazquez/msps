@@ -7,7 +7,9 @@ $(document).ready(() =>{
 
 setTimeout(() =>{
   $(".button-collapse").sideNav();
-  $('.slider').slider();
+  $('.slider').slider({
+    interval: 15000
+  });
   $($('.slider')[0]).find('.indicators').css({
     "bottom": "52px",
     "z-index": 1000
@@ -48,8 +50,7 @@ $('.location-to-country').on('click', (ev, ef) => {
   $('#cities').empty().removeClass('list-inline');
   $.ajax({
     url: "./dist/data/states.json",
-    dataType: "json",
-    success: data =>{
+    dataType: "json"}).done(function(data){
       var countryData = data[0][selected];
       var latLonCountry = countryData.latLon.split(',');
       var locations = countryData.cities;
@@ -68,11 +69,17 @@ $('.location-to-country').on('click', (ev, ef) => {
         ev.preventDefault();
         var cityCoord = $(ev.currentTarget).attr('data-latLon').split(',');
         map.setCenter(new google.maps.LatLng(cityCoord[0],cityCoord[1]));
-        map.setZoom(7);
+        if (cityCoord[0] == 21.026307) map.setZoom(9);
+        else map.setZoom(12);
       });
-    }
+    }).fail(function(data){
+      console.log("Algo salió mal");
+      console.log(data);
+    }).always(function(data){
+      console.log("Entramos al always");
+      console.log(data);
+    });
   });
-});
   $('.contemplatives, .action-men').hover(function(){
     $(this).find('h3').removeClass('low-title');
     $(this).find('p').removeClass('hidden-text');
