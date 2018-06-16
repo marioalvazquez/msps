@@ -12,6 +12,10 @@ h1, h2, h3 {
 .indicator-item {
   height: 8px !important;
   width: 8px !important; }
+  .indicator-item i {
+    font-size: 2rem;
+    color: #fdd835;
+    font-weight: bold; }
 
 .indicator-item.active {
   background-color: #b71c1c !important; }
@@ -24,7 +28,8 @@ h1, h2, h3 {
 
 .slider .indicators .indicator-item {
   width: 20px !important;
-  height: 20px !important; }
+  height: 20px !important;
+  background: none; }
 
 ul.list-inline {
   display: flex;

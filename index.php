@@ -153,12 +153,32 @@ justicia y paz, apoyándonos entre todos para formar una Iglesia alegre, incluye
       </div>
     </li>
     <li>
+      <div class="collapsible-header black-text"><i class="material-icons">pan_tool</i>Primera Consagración</div>
+      <div class="collapsible-body">
+        <ul>
+          <li class="missionary-steps center-align">
+            Una vez siendo misionero del Espíritu Santo se realizan los votos de castidad, pobreza y obediencia
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li>
       <div class="collapsible-header black-text"><i class="material-icons">book</i>Formación Básica</div>
       <div class="collapsible-body">
         <ul>
           <li class="missionary-steps" data-idStep="3"><span style="font-size:3rem; font-weight:bold;">1</span> Filosofado <i class="material-icons">arrow_forward</i></li>
           <li class="missionary-steps" data-idStep="4"><span style="font-size:3rem; font-weight:bold;">2</span> Vive la Experiencia de Entregarte <i class="material-icons">arrow_forward</i></li>
-          <li class="missionary-steps" data-idStep="5"><span style="font-size:3rem; font-weight:bold;">3</span> Transformemos el Mundo <i class="material-icons">arrow_forward</i></li>
+          <li class="missionary-steps" data-idStep="5"><span style="font-size:3rem; font-weight:bold;">3</span> Profundiza y Comparte <i class="material-icons">arrow_forward</i></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="collapsible-header black-text"><i class="material-icons">pan_tool</i>Consagración Perpetua</div>
+      <div class="collapsible-body">
+        <ul>
+          <li class="missionary-steps center-align">
+            Después de haber renovado varias veces, la primera consagración el jóven decide consagrarse para siempre
+          </li>
         </ul>
       </div>
     </li>
@@ -604,6 +624,8 @@ var map;
     </script>
     <script>
       $(document).ready(()=>{
+        $('.indicators').last().find('.indicator-item').first().append('<i class="material-icons">keyboard_arrow_right</p>');
+        $('.indicators').last().find('.indicator-item').last().append('<i class="material-icons">keyboard_arrow_right</p>');
         $('a[href="#videoModal"]').on('click', function(event){
           player.playVideo();
         });

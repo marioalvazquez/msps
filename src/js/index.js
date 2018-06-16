@@ -35,8 +35,9 @@ setTimeout(() =>{
     selectYears: 15, // Creates a dropdown of 15 years to control year
     format: 'yyyy-mm-dd'
   });
-
-}, 1500);
+  $('.indicators').last().find('.indicator-item').first().append('<i class="material-icons">keyboard_arrow_left</p>');
+  $('.indicators').last().find('.indicator-item').last().append('<i class="material-icons">keyboard_arrow_right</p>');
+}, 5000);
 $('.programa').find('li').hover(
   function(){
     $(this).find('span.titulo').fadeIn();
@@ -104,6 +105,9 @@ $('.location-to-country').on('click', (ev, ef) => {
         var selectedResult = data[0][itemSelected];
         $('#missonary-steps-modal').find('h4').text(selectedResult.title);
         $('#missonary-steps-modal').find('p').text(selectedResult.content);
+        if (itemSelected == 4) {
+          $('<p class="center-align"><a href="#findUs">Ver Comunidades</a></p>').insertAfter('#missonary-steps-modal p');
+        }
         $('#missonary-steps-modal').find('span').text(selectedResult.duration);
         $('#missonary-steps-modal').modal('open');
       }
