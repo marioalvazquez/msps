@@ -51,7 +51,7 @@ h1,h2,h3{
 }
 
 //Customs
-.slider .indicators .indicator-item{
+#us-info-col .slider .indicators .indicator-item{
   width: 20px !important;
   height: 20px !important;
   background: none;
@@ -109,8 +109,8 @@ position: relative;
 .mano-felix{
   position: absolute;
   bottom: 0;
-  width: 380px;
-  left: -65px;
+  width: 125px;
+  left: 0px;
   z-index: -1000;
 }
 }

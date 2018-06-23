@@ -54,7 +54,7 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
         <h1 class="red-text text-darken-4">SOMOS ACOMPAÑANTES</h1>
       </div>
     </div>
-    <div class="row">
+    <div class="row" style="margin-bottom:0 !important;">
       <div class="col s3" id="timeline-col">
         <section class="programa">
            <ul>
@@ -125,7 +125,7 @@ justicia y paz, apoyándonos entre todos para formar una Iglesia alegre, incluye
         </div>
       </div>
     </div>
-    <img src="dist/img/mano.png" alt="Mano Felix" class="mano-felix">
+    <img src="dist/img/manofelix.jpg" alt="Mano Felix" class="mano-felix">
   </div>
   <div class="had-container pink darken-4" id="vocations">
     <div class="container">
