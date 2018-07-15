@@ -80,10 +80,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
       </div>
       <div class="col s9" id="us-info-col">
         <div class="col s12 m8">
-          <div class="slider">
-          <ul class="slides">
-            <li>
-              <div class="caption left-align">
+          <div class="slick-carousel">
+            <div class="item">
+              <div class="caption center-align">
                 <h3 class="yellow-text text-darken-1">Humanos</h3>
                 <p class="light white-text fs-3">
                   Somos hombres que hemos decidido apostar la vida por Dios sirviendo a la humanidad.
@@ -93,9 +92,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                   de dolor y fragilidad humana.
                 </p>
               </div>
-            </li>
-            <li>
-              <div class="caption left-align">
+            </div>
+            <div class="item">
+              <div class="caption center-align">
                 <h3 class="yellow-text text-darken-1">Fraternos</h3>
                 <p class="light white-text fs-3">
                   Nuestro modo de ver y seguir a Jesús es como “Sacerdote y Víctima”.
@@ -105,9 +104,9 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
                   tienen su lugar y participación.
                 </p>
               </div>
-            </li>
-            <li>
-              <div class="caption right-align">
+            </div>
+            <div class="item">
+              <div class="caption center-align">
                 <h3 class="yellow-text text-darken-1">Solidarios</h3>
                 <p class="light white-text fs-3">
                   Como Jesús, entregamos por amor nuestra vida como ofrenda agradable a Dios
@@ -116,9 +115,8 @@ Espíritu Santo. De ese modo, buscamos acompañar propuestas que ayuden a vivir 
 justicia y paz, apoyándonos entre todos para formar una Iglesia alegre, incluyente y actualizada.
                 </p>
               </div>
-            </li>
-          </ul>
-        </div>
+            </div>
+          </div>
         </div>
         <div class="col s12 m4 center align">
           <img src="dist/img/us.jpg" alt="Happiness" class="circle responsive-img z-depth-3">
@@ -259,8 +257,8 @@ justicia y paz, apoyándonos entre todos para formar una Iglesia alegre, incluye
     <div class="parallax-container valign-wrapper center-align">
         <div class="row container">
           <h2 class="header"><i class="material-icons yellow-text text-darken-1" style="font-size:10rem">format_quote</i></h2>
-          <h2 class="header white-text">"Provincia Felix de Jesús, somos vocación"</h2>
-          <p class="yellow-text text-darken-1">Felix de Jesús</p>
+          <h2 class="header white-text">"Provincia Félix de Jesús, somos vocación"</h2>
+          <p class="yellow-text text-darken-1">Félix de Jesús</p>
         </div>
     <div class="parallax"><img src="dist/img/parallax.jpg"></div>
   </div>
@@ -352,189 +350,9 @@ var map;
         map = new google.maps.Map(document.getElementById('findUsMap'), {
           zoom: 5,
           center: uluru
-          /*,
-          styles: [
-    {
-        "featureType": "all",
-        "elementType": "labels.text.fill",
-        "stylers": [
-            {
-                "saturation": 36
-            },
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 40
-            }
-        ]
-    },
-    {
-        "featureType": "all",
-        "elementType": "labels.text.stroke",
-        "stylers": [
-            {
-                "visibility": "on"
-            },
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    {
-        "featureType": "all",
-        "elementType": "labels.icon",
-        "stylers": [
-            {
-                "visibility": "off"
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 20
-            }
-        ]
-    },
-    {
-        "featureType": "administrative",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 17
-            },
-            {
-                "weight": 1.2
-            }
-        ]
-    },
-    {
-        "featureType": "landscape",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 20
-            }
-        ]
-    },
-    {
-        "featureType": "poi",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 21
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.fill",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 17
-            }
-        ]
-    },
-    {
-        "featureType": "road.highway",
-        "elementType": "geometry.stroke",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 29
-            },
-            {
-                "weight": 0.2
-            }
-        ]
-    },
-    {
-        "featureType": "road.arterial",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 18
-            }
-        ]
-    },
-    {
-        "featureType": "road.local",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 16
-            }
-        ]
-    },
-    {
-        "featureType": "transit",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 19
-            }
-        ]
-    },
-    {
-        "featureType": "water",
-        "elementType": "geometry",
-        "stylers": [
-            {
-                "color": "#000000"
-            },
-            {
-                "lightness": 17
-            }
-        ]
-    }
-]
-*/
+
         });
         let icon = 'dist/img/icowine.png';
-        //var marker = new google.maps.Marker({
-        //  position: {
-        //    lat: 28.1854152,
-        //    lng: -105.5653102
-        //  },
-        //  map: map,
-        //  icon: icon
-        //});
-        //marker["name"] = "mondo bello";
-        //marker.addListener('click', function(){
-        //  alert(this.name);
-        //});
         $.ajax({
           dataType: "json",
           url: "dist/data/locations.json",
@@ -624,8 +442,6 @@ var map;
     </script>
     <script>
       $(document).ready(()=>{
-        $('.indicators').last().find('.indicator-item').first().append('<i class="material-icons">keyboard_arrow_right</p>');
-        $('.indicators').last().find('.indicator-item').last().append('<i class="material-icons">keyboard_arrow_right</p>');
         $('a[href="#videoModal"]').on('click', function(event){
           player.playVideo();
         });
@@ -739,6 +555,12 @@ var map;
           }
           return `${stringDay}, ${hour} hrs.`;
         }
+      });
+    </script>
+    <script src="dist/js/slick.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.slick-carousel').slick();
       });
     </script>
   </body>

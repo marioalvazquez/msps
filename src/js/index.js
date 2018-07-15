@@ -35,8 +35,6 @@ setTimeout(() =>{
     selectYears: 15, // Creates a dropdown of 15 years to control year
     format: 'yyyy-mm-dd'
   });
-  $('.indicators').last().find('.indicator-item').first().append('<i class="material-icons">keyboard_arrow_left</p>');
-  $('.indicators').last().find('.indicator-item').last().append('<i class="material-icons">keyboard_arrow_right</p>');
 }, 5000);
 $('.programa').find('li').hover(
   function(){
