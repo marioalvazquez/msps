@@ -155,7 +155,7 @@ justicia y paz, apoyándonos entre todos para formar una Iglesia alegre, incluye
       <div class="collapsible-body">
         <ul>
           <li class="missionary-steps center-align">
-            Una vez siendo misionero del Espíritu Santo se realizan los votos de castidad, pobreza y obediencia
+            Si después de 3 años, habiendo conocido el carisma, el jóven hace su primera consagración como misionero del espíritu santo
           </li>
         </ul>
       </div>
@@ -195,6 +195,7 @@ justicia y paz, apoyándonos entre todos para formar una Iglesia alegre, incluye
     <div class="modal-content">
       <h4></h4>
       <p></p>
+      <p class="link center-align"><a href="#findUs"></a></p>
       <span></span>
     </div>
   </div>
@@ -346,7 +347,7 @@ justicia y paz, apoyándonos entre todos para formar una Iglesia alegre, incluye
 <script>
 var map;
       function initMap() {
-        var uluru = {lat: 41.9033189, lng: -12.4122659};
+        var uluru = {lat: 19.39068, lng: -99.2837001};
         map = new google.maps.Map(document.getElementById('findUsMap'), {
           zoom: 5,
           center: uluru

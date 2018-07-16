@@ -285,7 +285,7 @@
   },
   {
     "id": 20,
-    "name": "Comunidad de Patria Nueva",
+    "name": "Comunidad del Filosofado Patria Nueva",
     "location":{
       "lat": 20.6215559,
       "lon": -103.3795422,
@@ -355,6 +355,51 @@
       "neighborhood": "Crema",
       "zipCode": 20141,
       "tel": ["(39) 0289 462092"],
+      "gallery": []
+    }
+  },
+  {
+    "id": 25,
+    "name": "Rua Álvares de Azevedo",
+    "location":{
+      "lat": -23.5433559,
+      "lon": -46.7814341,
+      "state": "Sao Paulo",
+      "city": "Osasco",
+      "address": "Rua Álvares de Azevedo 151",
+      "neighborhood": "Centro",
+      "zipCode": "6083-290",
+      "tel": ["(39) 0289 462092"],
+      "gallery": []
+    }
+  },
+  {
+    "id": 26,
+    "name": "Casa Deformación",
+    "location":{
+      "lat": -23.5590581,
+      "lon": -46.9364893,
+      "state": "Sao Paulo",
+      "city": "Itapevi",
+      "address": "Av. Brasileiros 439",
+      "neighborhood": "Parque Suburbano",
+      "zipCode": "6663-450",
+      "tel": ["(39) 0289 462092"],
+      "gallery": []
+    }
+  },
+  {
+    "id": 27,
+    "name": "Casa Provincial",
+    "location":{
+      "lat": 20.6391283,
+      "lon": -103.4095194,
+      "state": "Jalisco",
+      "city": "Zapopan",
+      "address": "Av. Felix Rougier 3851",
+      "neighborhood": "Col. Loma Bonita",
+      "zipCode": 45087,
+      "tel": ["(33) 3631 5046", "(33) 3631 5585", "(33) 3631 5065"],
       "gallery": []
     }
   }

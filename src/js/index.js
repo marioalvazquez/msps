@@ -74,6 +74,9 @@ $('.location-to-country').on('click', (ev, ef) => {
         else if (cityCoord[0] == 25.4296138){
           map.setZoom(15);
         }
+        else if(cityCoord[0] == -23.541108){
+          map.setZoom(10);
+        }
         else{
           map.setZoom(12);
         }
@@ -102,9 +105,12 @@ $('.location-to-country').on('click', (ev, ef) => {
       success: data =>{
         var selectedResult = data[0][itemSelected];
         $('#missonary-steps-modal').find('h4').text(selectedResult.title);
-        $('#missonary-steps-modal').find('p').text(selectedResult.content);
-        if (itemSelected == 4) {
-          $('<p class="center-align"><a href="#findUs">Ver Comunidades</a></p>').insertAfter('#missonary-steps-modal p');
+        $('#missonary-steps-modal').find('p').first().text(selectedResult.content);
+        if (selectedResult.communities) {
+          $('#missonary-steps-modal').find('p.link a').text("Ver comunidades");
+        }
+        else{
+          $('#missonary-steps-modal').find('p.link a').text("");
         }
         $('#missonary-steps-modal').find('span').text(selectedResult.duration);
         $('#missonary-steps-modal').modal('open');

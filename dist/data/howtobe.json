@@ -17,7 +17,8 @@
   "4":{
     "title": "Servicio Apostólico (EFOSA)",
     "duration": "2 años",
-    "content": "Vive la experiencia de compartir la mision como misionero del Espíritu Santo en una de nuestras comunidades"
+    "content": "Vive la experiencia de compartir la mision como misionero del Espíritu Santo en una de nuestras comunidades",
+    "communities": "Ver Comunidades"
   },
   "5":{
     "title": "Teología CDMX",
@@ -27,6 +28,6 @@
   "6":{
     "title": "",
     "duration": "",
-    "content": "Preparación para el ministerio de diaconado y presviterado"
+    "content": "Preparación para el ministerio de diaconado y presbiterado"
   }
   }]
